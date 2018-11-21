@@ -5,194 +5,201 @@
     <title>Каталог Магазина "Техномарт"</title>
   </head>
   <body>
-  <header class="main-header">
-    <a class="header-logo">
-      <img src="#" width="111" height="18" alt="Логотип магазина Техномарт">
-    </a>
-    <div class="search">
-      <button>Поиск:</button>
-    </div>
-    <div class="bookmarks">
-      <a class="button">Закладки:0</a>
-    </div>
-    <div class="cart">
-      <a class="button">Корзина:0</a>
-    </div>
-    <div class="checkout">
-      <a class="button">Оформить заказ</a>
-    </div>
-    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-    <section class="header-contacts">
-      <a class="header-contacts-phone" href="#">+7 (812) 555-05-55</a>
-      <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    </section>
-    <div class="user-profile">
-      <p class="user-profile-form">Равшан Джамшутович</p>
-      <a class="user-profile-orders" href="#" >Мои заказы</a>
-      <a class="user-profile-in" href="#" >Личный кабинет</a>
-    </div>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a class="site-navigation-current" href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+    <header class="main-header">
+      <a class="header-logo" href="index.html">Логотип магазина Техномарт</a>
+      <div>
+        <button class="search">Поиск:</button>
+        <a class="bookmarks">Закладки:0</a>
+        <a class="cart">Корзина:0</a>
+        <a class="checkout">Оформить заказ</a>
+      </div>
+      <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
+      <section class="header-contacts">
+        <a class="header-contacts-phone" href="#">+7 (812) 555-05-55</a>
+        <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </section>
+      <div class="user-profile">
+        <a class="user-profile-form" href="#">Равшан Джамшутович</a>
+        <a class="user-profile-lockout" href="#">Выход</a>
+        <a class="user-profile-orders" href="#" >Мои заказы</a>
+        <a class="user-profile-profile" href="#" >Личный кабинет</a>
+      </div>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a class="site-navigation-current" href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Перфораторы</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Инструмент </a></li>
+        <li><a class="breadcrumbs-current">Перфораторы</a></li>
       </ul>
-    </nav>
-  </header>
+      <section class="filters">
+        <h2>Фильтр товаров</h2>
+        <!--Здесь будет форма-->
+      </section>
 
-  <main>
-    <h1 class="page-title">ПЕРФОРАТОРЫ</h1>
-    <ul class="breadcrumbs">
-      <li><a href="index.html">ГЛАВНАЯ </a></li>
-      <li><a href="catalog.html">МАГАЗИН</a></li>
-      <li><a href="#">Инструмент </a></li>
-      <li><a class="breadcrumbs-current">Перфораторы</a></li>
-    </ul>
-    <section class="filters">
-      <h2>Фильтр товаров</h2>
-      <!--Здесь будет форма-->
-    </section>
-
-    <section class="catalog">
-      <ul class="catalog-list">
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+      <section class="catalog">
+        <ul class="catalog-list">
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
             <img src="#" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
             <p class="old-price">22500 Р.</p>
             <p class="new-price">15500 Р.</p>
-          </a>
-        </li>
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <img src="#" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
             <p class="old-price">30500 Р.</p>
             <p class="new-price">25500 Р.</p>
-          </a>
-        </li>
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+            <img src="#" alt="Перфоратор BOSCH BFG 2000" width="144" height="128">
             <img class="new" src="#" width="60" height="59" alt="new">
-            <a class="button-buy">КУПИТЬ</a>
-            <button class="ad-bookmarks">В закладки</button>
             <p class="new-price">12500 Р.</p>
-          </a>
-        </li>
-        <li class="product-item">
-           <a href="#">
-             <h3>Перфоратор BOSCH BFG 3000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+             <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
              <img src="#" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
              <p class="old-price">22500 Р.</p>
              <p class="new-price">15500 Р.</p>
-           </a>
-        </li>
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <img class="new" src="#" width="60" height="59" alt="new">
             <img src="#" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
             <p class="old-price">30500 Р.</p>
             <p class="new-price">25500 Р.</p>
-          </a>
-        </li>
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
             <img src="#" alt="Перфоратор BOSCH BFG 2000" width="144" height="128">
             <p class="new-price">12500 Р.</p>
-          </a>
-        </li>
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
             <img class="new" src="#" width="60" height="59" alt="new">
             <img src="#" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
             <p class="old-price">22500 Р.</p>
             <p class="new-price">15500 Р.</p>
-          </a>
-        </li>
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <img src="#" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
             <p class="old-price">30500 Р.</p>
             <p class="new-price">25500 Р.</p>
-          </a>
-        </li>
-        <li class="product-item">
-          <a href="#">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+          <li class="product-item">
+            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
             <img src="#" alt="Перфоратор BOSCH BFG 2000" width="144" height="128">
             <p class="new-price">12500 Р.</p>
-          </a>
-        </li>
-      </ul>
-    </section>
-  </main>
+            <div class="product-button">
+              <a class="button buy">Купить</a>
+              <button class="ad-bookmarks">В закладки</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  <footer class="upper-footer">
-    <a class="footer-logo">
-      <img src="#" width="138" height="23" alt="Логотип магазина Техномарт">
-    </a>
-    <p class="upper-footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-      +7 (812) 555-05-55
-    </p>
-    <nav class="footer-navigation">
-      <ul class="footer-navigation-list">
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
+    <footer class="upper-footer">
+      <a class="footer-logo" href="index.html">Логотип магазина "Техномарт"</a>
+      <p class="upper-footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7 (812) 555-05-55
+      </p>
+      <nav class="footer-navigation">
+        <ul class="footer-navigation-list">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
 
-    <section class="footer-offers">
-      <h2 class="visually-hidden">Наши предложения</h2>
-      <ul class="footer-offers-list">
-        <li class="footer-offers-materials">
-          <a href="#">Материалы</a>
-        </li>
-        <li class="footer-offers-mechanism">
-          <a href="#">Техника</a>
-        </li>
-        <li class="footer-offers-tool">
-          <a href="#">Инструмент</a>
-        </li>
-        <li class="footer-discount">
-          <a href="#">Спецпредложения</a>
-        </li>
-      </ul>
-    </section>
-  </footer>
+      <section class="footer-offers">
+        <h2 class="visually-hidden">Наши предложения</h2>
+        <ul class="footer-offers-list">
+          <li class="footer-offers-materials">
+            <a href="#">Материалы</a>
+          </li>
+          <li class="footer-offers-mechanism">
+            <a href="#">Техника</a>
+          </li>
+          <li class="footer-offers-tool">
+            <a href="#">Инструмент</a>
+          </li>
+          <li class="footer-discount">
+            <a href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
 
-  <footer class="lower-footer">
-    <p class="footer-rights">
-      © 2010–2017 Компания «Техномарт»<br>
-      Все права защищены<br>
-    </p>
-    <div class="footer-social">
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фэйсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-    </div>
-    <p>
-      <b>Обратная связь:</b>
-    <p class="footer-feedback">mail@htmlacademy.ru</p>
-    <p>
-      <b>РАЗРАБОТАНО:</b>
-    <p class="footer-copyright">
-      <a href="https://htmlacademy.ru">html academy</a>
-    </p>
-  </footer>
-
+    <footer class="lower-footer">
+      <p class="footer-rights">
+        © 2010–2017 Компания «Техномарт»<br>
+        Все права защищены<br>
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фэйсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p>
+        <b>Обратная связь:</b>
+      <p class="footer-feedback">mail@htmlacademy.ru</p>
+      <p>
+        <b>Разработано:</b>
+      <p class="footer-copyright">
+        <a href="https://htmlacademy.ru">html academy</a>
+      </p>
+    </footer>
   </body>
 </html>
