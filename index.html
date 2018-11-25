@@ -9,9 +9,9 @@
     <a class="header-logo">Техномарт</a>
     <div>
       <button class="search">Поиск:</button>
-      <a class="bookmarks">Закладки:0</a>
-      <a class="cart">Корзина:0</a>
-      <a class="checkout">Оформить заказ</a>
+      <a class="bookmarks" href="">Закладки:0</a>
+      <a class="cart" href="">Корзина:0</a>
+      <a class="checkout" href="">Оформить заказ</a>
     </div>
     <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
     <section class="header-contacts">
@@ -75,8 +75,8 @@
             <a class="button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
-        <button class="button-slider-back"></button>
-        <button class="button-slider-next"></button>
+        <button class="button-slider-back">Предыдущий слайд</button>
+        <button class="button-slider-next">Следующий слайд</button>
       </section>
       <div class="main-delivery">
         <h3>Доставка</h3>
@@ -96,7 +96,7 @@
           <p class="old-price">32500 Р.</p>
           <p class="new-price">25500 Р.</p>
           <div class="product-button">
-            <a class="button buy">Купить</a>
+            <a class="button buy" href="">Купить</a>
             <button class="ad-bookmarks">В закладки</button>
           </div>
         </li>
@@ -108,7 +108,7 @@
           <p class="old-price">22500 Р.</p>
           <p class="new-price">15500 Р.</p>
           <div class="product-button">
-            <a class="button buy">Купить</a>
+            <a class="button buy" href="#">Купить</a>
             <button class="ad-bookmarks">В закладки</button>
           </div>
         </li>
@@ -120,7 +120,7 @@
           <p class="old-price">30500 Р.</p>
           <p class="new-price">25500 Р.</p>
           <div class="product-button">
-            <a class="button buy">Купить</a>
+            <a class="button buy" href="#">Купить</a>
             <button class="ad-bookmarks">В закладки</button>
           </div>
         </li>
@@ -131,7 +131,7 @@
           </div>
           <p class="new-price">12500 Р.</p>
           <div class="product-button">
-            <a class="button buy">Купить</a>
+            <a class="button buy" href="#">Купить</a>
             <button class="ad-bookmarks">В закладки</button>
           </div>
         </li>
@@ -179,9 +179,24 @@
           <li><button class="services-slider-button">Гарантия</button> </li>
           <li><button class="services-slider-button">Кредит</button> </li>
         </ul>
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        <ul class="slaider-2">
+          <li>
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          </li>
+          <li><h3>Гарантия</h3>
+            <p>Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгаранием,
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.</p>
+          </li>
+          <li>
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <a href="" class="button">Отправить заявку</a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -263,5 +278,31 @@
       </p>
     </section>
   </footer>
+
+  <section class="modal modal-map">
+    <h3 class="visually-hidden">Как до нас добраться</h3>
+    <p>
+      <img src="img/big-map.png" width="940" height="446" alt="Офис компании по адресу
+                          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </p>
+    <button class="modal-close">Закрыть</button>
+  </section>
+
+
+
+  <section class="modal modal-message">
+    <h3 class="visually-hidden">Напишите нам</h3>
+    <form class="message-form" action="" method="post">
+      <label for="user-name">Ваше имя:</label>
+      <input id="user-name" class="user-name" type="text" placeholder="Имя фамилия">
+      <label for="user-email">Ваш e-mail:</label>
+      <input id="user-email" class="user-email" type="text" placeholder="email@example.com">
+      <label for="user-message">Текст письма:</label>
+      <input id="user-message" class="user-message" type="text" placeholder="В свободной форме">
+      <button class="button-send" type="submit">Отправить</button>
+    </form>
+  </section>
+
+
 </body>
 </html>
