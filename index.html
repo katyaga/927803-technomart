@@ -8,10 +8,14 @@
   <header class="main-header">
     <a class="header-logo">Техномарт</a>
     <div>
-      <button class="search">Поиск:</button>
-      <a class="bookmarks" href="">Закладки:0</a>
-      <a class="cart" href="">Корзина:0</a>
-      <a class="checkout" href="">Оформить заказ</a>
+      <button class="search-button" type="button">Поиск:</button>
+      <form class="search" action="" method="post">
+        <label class="visually-hidden" for="search">Текстовое поле для поиска</label>
+        <input id="search" type="text" name="search" placeholder="Поиск">
+      </form>
+      <a class="bookmarks" href="#">Закладки:0</a>
+      <a class="cart" href="#">Корзина:0</a>
+      <a class="checkout" href="#">Оформить заказ</a>
     </div>
     <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
     <section class="header-contacts">
@@ -75,8 +79,20 @@
             <a class="button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
-        <button class="button-slider-back">Предыдущий слайд</button>
-        <button class="button-slider-next">Следующий слайд</button>
+        <button class="button-slider-back" type="button">Предыдущий слайд</button>
+        <button class="button-slider-next" type="button">Следующий слайд</button>
+        <form class="choice-slide" action="" method="post">
+          <ul>
+            <li>
+              <label class="visually-hidden" for="slide-1">Перейти на первый слайд</label>
+              <input id="slide-1" type="radio" name="choice-slide" value="choice-slide-1" checked>
+            </li>
+            <li>
+              <label class="visually-hidden" for="slide-2">Перейти на второй слайд</label>
+              <input id="slide-2" type="radio" name="choice-slide" value="choice-slide-2">
+            </li>
+          </ul>
+        </form>
       </section>
       <div class="main-delivery">
         <h3>Доставка</h3>
@@ -96,8 +112,8 @@
           <p class="old-price">32500 Р.</p>
           <p class="new-price">25500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item">
@@ -109,7 +125,7 @@
           <p class="new-price">15500 Р.</p>
           <div class="product-button">
             <a class="button buy" href="#">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item">
@@ -121,7 +137,7 @@
           <p class="new-price">25500 Р.</p>
           <div class="product-button">
             <a class="button buy" href="#">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item new">
@@ -132,7 +148,7 @@
           <p class="new-price">12500 Р.</p>
           <div class="product-button">
             <a class="button buy" href="#">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
       </ul>
@@ -175,26 +191,27 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <div class="services-slider">
         <ul class="services-slider-buttons">
-          <li><button class="services-slider-button">Доставка</button> </li>
-          <li><button class="services-slider-button">Гарантия</button> </li>
-          <li><button class="services-slider-button">Кредит</button> </li>
+          <li><button class="services-slider-button" type="button">Доставка</button> </li>
+          <li><button class="services-slider-button" type="button">Гарантия</button> </li>
+          <li><button class="services-slider-button" type="button">Кредит</button> </li>
         </ul>
-        <ul class="slaider-2">
-          <li>
+        <ul class="slider-2">
+          <li class="slide-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
           </li>
-          <li><h3>Гарантия</h3>
+          <li class="slide-warranty">
+            <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгаранием,
               вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.</p>
           </li>
-          <li>
+          <li class="slide-loan">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a href="" class="button">Отправить заявку</a>
+            <a href="#" class="button">Отправить заявку</a>
           </li>
         </ul>
       </div>
@@ -285,7 +302,7 @@
       <img src="img/big-map.png" width="940" height="446" alt="Офис компании по адресу
                           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </p>
-    <button class="modal-close">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
 
@@ -294,11 +311,11 @@
     <h3 class="visually-hidden">Напишите нам</h3>
     <form class="message-form" action="" method="post">
       <label for="user-name">Ваше имя:</label>
-      <input id="user-name" class="user-name" type="text" placeholder="Имя фамилия">
+      <input id="user-name" class="user-name" name="user-name" type="text" placeholder="Имя фамилия">
       <label for="user-email">Ваш e-mail:</label>
-      <input id="user-email" class="user-email" type="text" placeholder="email@example.com">
+      <input id="user-email" class="user-email" name="user-email" type="text" placeholder="email@example.com">
       <label for="user-message">Текст письма:</label>
-      <input id="user-message" class="user-message" type="text" placeholder="В свободной форме">
+      <input id="user-message" class="user-message" name="user-message" type="text" placeholder="В свободной форме">
       <button class="button-send" type="submit">Отправить</button>
     </form>
   </section>

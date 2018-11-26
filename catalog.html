@@ -8,10 +8,14 @@
   <header class="main-header">
     <a class="header-logo" href="index.html">Техномарт</a>
     <div>
-      <button class="search">Поиск:</button>
-      <a class="bookmarks" href="">Закладки:0</a>
-      <a class="cart" href="">Корзина:0</a>
-      <a class="checkout" href="">Оформить заказ</a>
+      <button class="search-button" type="button">Поиск:</button>
+      <form class="search" action="" method="post">
+        <label class="visually-hidden" for="search">Текстовое поле для поиска</label>
+        <input id="search" type="text" name="search" placeholder="Поиск">
+      </form>
+      <a class="bookmarks" href="#">Закладки:0</a>
+      <a class="cart" href="#">Корзина:0</a>
+      <a class="checkout" href="#">Оформить заказ</a>
     </div>
     <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
     <section class="header-contacts">
@@ -77,11 +81,11 @@
           <legend>Питание:</legend>
           <ul>
             <li>
-              <input type="radio" name="battery" id="battery" checked>
+              <input type="radio" name="supply" id="battery" value="battery" checked>
               <label for="battery">Аккумуляторные</label>
             </li>
             <li>
-              <input type="radio" name="ac" id="ac">
+              <input type="radio" name="supply" id="ac" value="ac">
               <label for="ac">Сетевые</label>
             </li>
           </ul>
@@ -93,12 +97,12 @@
     <section class="sort">
       <h2>Сортировка:</h2>
       <ul class="sort-list">
-        <li><button class="sort-type">По цене</button></li>
-        <li><button class="sort-type">По типу</button></li>
-        <li><button class="sort-type">По функционалу</button></li>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По функционалу</a></li>
       </ul>
-      <button class="ask">По возрастанию</button>
-      <button class="desk">По убыванию</button>
+      <button class="ask" type="button">По возрастанию</button>
+      <button class="desk" type="button">По убыванию</button>
     </section>
 
     <section class="catalog">
@@ -111,8 +115,8 @@
           <p class="old-price">22500 Р.</p>
           <p class="new-price">15500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item">
@@ -123,8 +127,8 @@
           <p class="old-price">30500 Р.</p>
           <p class="new-price">25500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item new">
@@ -134,8 +138,8 @@
           </div>
           <p class="new-price">12500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item">
@@ -146,8 +150,8 @@
           <p class="old-price">22500 Р.</p>
           <p class="new-price">15500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item new">
@@ -158,8 +162,8 @@
           <p class="old-price">30500 Р.</p>
           <p class="new-price">25500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item new">
@@ -169,8 +173,8 @@
           </div>
           <p class="new-price">12500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item new">
@@ -181,8 +185,8 @@
           <p class="old-price">22500 Р.</p>
           <p class="new-price">15500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item">
@@ -193,8 +197,8 @@
           <p class="old-price">30500 Р.</p>
           <p class="new-price">25500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
         <li class="product-item">
@@ -204,8 +208,8 @@
           </div>
           <p class="new-price">12500 Р.</p>
           <div class="product-button">
-            <a class="button buy" href="">Купить</a>
-            <button class="ad-bookmarks">В закладки</button>
+            <a class="button buy" href="#">Купить</a>
+            <button class="ad-bookmarks" type="button">В закладки</button>
           </div>
         </li>
       </ul>
@@ -291,9 +295,9 @@
   <section class="modal modal-buy">
     <h4 class="visually-hidden">Информация о покупке</h4>
     <b>Товар добавлен в корзину!</b>
-    <a href="" class="button">Оформить заказ</a>
-    <button class="modal-continue">Продолжить покупки</button>
-    <button class="modal-close">Закрыть</button>
+    <a href="#" class="button">Оформить заказ</a>
+    <a class="modal-continue button" href="#">Продолжить покупки</a>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 </html>
