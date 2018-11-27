@@ -8,8 +8,9 @@
   <header class="main-header">
     <a class="header-logo">Техномарт</a>
     <div>
-      <button class="search-button" type="button">Поиск:</button>
+
       <form class="search" action="" method="post">
+        <button class="search-button" type="submit">Поиск:</button>
         <label class="visually-hidden" for="search">Текстовое поле для поиска</label>
         <input id="search" type="text" name="search" placeholder="Поиск">
       </form>
@@ -81,18 +82,10 @@
         </ul>
         <button class="button-slider-back" type="button">Предыдущий слайд</button>
         <button class="button-slider-next" type="button">Следующий слайд</button>
-        <form class="choice-slide" action="" method="post">
-          <ul>
-            <li>
-              <label class="visually-hidden" for="slide-1">Перейти на первый слайд</label>
-              <input id="slide-1" type="radio" name="choice-slide" value="choice-slide-1" checked>
-            </li>
-            <li>
-              <label class="visually-hidden" for="slide-2">Перейти на второй слайд</label>
-              <input id="slide-2" type="radio" name="choice-slide" value="choice-slide-2">
-            </li>
-          </ul>
-        </form>
+        <div class="choice-slide">
+          <button class="first-slide" type="button">Перейти на первый слайд</button>
+          <button class="second-slide" type="button">Перейти на второй слайд</button>
+        </div>
       </section>
       <div class="main-delivery">
         <h3>Доставка</h3>
