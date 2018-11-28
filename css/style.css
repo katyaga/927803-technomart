@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: capitalize;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.middle-header {
+  background-color: #f3f7f9;
+}
+
+.header-top,
+.site-navigation,
+.header-user-navigation ul {
+  list-style: none;
+}
+
+.header-top a,
+.main-navigation a {
+  color: #ffffff;
+}
+
+.search input[type="text"] {
+  font: inherit;
+  background-color: #293449;
+  border: none;
+}
+
+.search input:hover {
+    background-color: #212a3a;
+}
+
+.search input:hover {
+
+  background-color: #ffffff;
+}
+
+
+.main-navigation a:hover,
+.main-navigation a:active {
+  background-color: #1d2739;
+}
+
+.main-navigation a:active {
+  opacity: 0.5;
+}
+
+.header-top form:hover,
+.bookmarks:hover,
+.bookmarks:focus,
+.cart:hover,
+.cart:focus {
+  background-color: #212a3a;
+}
+
+.checkout {
+  background-color: #63a63e;
+}
+
+.checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.checkout:active {
+  opacity: 0.5;
+
+  background-color: #518534;
+}
+
+.headline {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  text-transform: none;
+
+}
+
+.header-contacts-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+
+  border: 3px solid #ffffff;
+}
+
+.header-contacts-address {
+  font-size: 14px;
+  color: #32425c;
+}
+
+.header-user-navigation a,
+.user-profile-form,
+.user-profile-lockout {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: #ffffff;
+}
+
+.user-profile-orders,
+.user-profile-profile {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.header-user-navigation a:hover {
+  color: #ee3643;
+}
+.header-user-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.user-profile-form:active {
+  opacity: 0.3;
+  background-color: #ffffff;
+}
+
+.user-profile-orders:hover,
+.user-profile-profile:hover {
+  color: #ee3643;
+}
+
+.user-profile-orders:active,
+.user-profile-profile:active {
+  opacity: 0.3;
+  color: #32425c;
+}
+
+
+
+.about-us,
+.contacts {
+  background-color: #ffffff;
+}
+.about-us h2,
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-us p,
+.contacts p {
+  font-size: 13px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: none;
+}
+.transport-company-list {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+}
+.button {
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #ee3643;
+}
+
+.upper-footer ul,
+.lower-footer ul {
+  list-style: none;
+}
+.upper-footer {
+  font-size: 18px;
+  background-color: #32425c;
+  text-transform: none;
+}
+.upper-footer p,
+.footer-navigation-list a {
+  color: #f3f7f9;
+}
+.footer-offers-list a {
+  color: #ffd180;
+}
+
+.lower-footer {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+  text-transform: none;
+}
+.footer-social a {
+  color: #ffffff;
+
+  background-color: #212a3a;
+}
+.footer-feedback,
+.footer-copyright {
+  color:#ffd180;
+}
+
+.footer-offers-list a:hover,
+.footer-navigation-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-offers-list a:active,
+.footer-navigation-list a:active {
+  opacity: 0.5;
+}
+.footer-social a:hover,
+.footer-social a:active {
+  background-color: #ee3643;
+}
+
+.footer-feedback:hover,
+.footer-copyright:hover {
+  text-decoration: underline;
+}
+
+.footer-feedback:active,
+.footer-copyright:active {
+  color: #ee3643;
+}
+
+
+
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs a {
+  color: #000000;
+  font-size: 14px;
+  line-height: 17.5px;
+  text-transform: uppercase;
+}
+
+.filter {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.filter legend {
+  font-size: 17.5px;
+  line-height: 31.5px;
+  font-weight: bold;
+}
+.filter label {
+  font-size: 15px;
+  line-height: 20px;
+}
+.filter-submit {
+  font-size: 14px;
+  line-height: 17.5px;
+  text-transform: uppercase;
+}
+.catalog-list {
+  list-style: none;
+}
+.product-item h3,
+.old-price,
+.new-price {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+.catalog-list {
+  text-align: center;
+}
+.catalog-list h3 a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #999999;
+}
+.new-price {
+  color: #ffffff;
+  background: url("../img/price.png");
+}
+.button.buy,
+.ad-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button.buy {
+  background-color: #63a63e;
+}
+.button.buy:hover {
+  background-color: #5fbb2d;
+}
+.button.buy:active {
+  background-color: #518534;
+}
+.ad-bookmarks:hover {
+  border-color: #32425c;
+}
+.ad-bookmarks:active {
+  opacity: 0.3;
+}
+
+.ad-bookmarks {
+  color: #32425c;
+  border: 3px solid #63a63e;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+

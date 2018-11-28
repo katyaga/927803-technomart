@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин "Техномарт"</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <a class="header-logo">Техномарт</a>
-    <div>
-
+    <div class="header-top">
       <form class="search" action="" method="post">
         <button class="search-button" type="submit">
           <span class="visually-hidden">Поиск:</span>
@@ -20,16 +23,18 @@
       <a class="cart" href="#">Корзина:0</a>
       <a class="checkout" href="#">Оформить заказ</a>
     </div>
-    <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
-    <section class="header-contacts">
-      <a class="header-contacts-phone" href="#">+7 (812) 555-05-55</a>
-      <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    </section>
-    <div class="header-user-navigation">
-      <ul>
-        <li><a class="login-link" href="#">Войти</a></li>
-        <li><a class="login-link" href="#">Регистрация</a></li>
-      </ul>
+    <div class="middle-header">
+      <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
+      <section class="header-contacts">
+        <a class="header-contacts-phone" href="#">+7 (812) 555-05-55</a>
+        <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </section>
+      <div class="header-user-navigation">
+        <ul>
+          <li><a class="login-link" href="#">Войти</a></li>
+          <li><a class="login-link" href="#">Регистрация</a></li>
+        </ul>
+      </div>
     </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -282,11 +287,10 @@
       </div>
       <p>
         <b>Обратная связь:</b>
-      <p class="footer-feedback">mail@htmlacademy.ru</p>
+        <a class="footer-feedback" href="#">mail@htmlacademy.ru</a>
       <p>
         <b>Разработано:</b>
-      <p class="footer-copyright">
-        <a href="https://htmlacademy.ru">html academy</a>
+        <a class="footer-copyright" href="https://htmlacademy.ru">html academy</a>
       </p>
     </section>
   </footer>
