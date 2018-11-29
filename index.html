@@ -10,8 +10,8 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="header-logo">Техномарт</a>
     <div class="header-top">
+      <a class="header-logo">Техномарт</a>
       <form class="search" action="https://echo.htmlacademy.ru/" method="post">
         <button class="search-button" type="submit">
           <span class="visually-hidden">Поиск:</span>
@@ -19,9 +19,11 @@
         <label class="visually-hidden" for="search">Найти на сайте</label>
         <input id="search" type="text" name="search" placeholder="Поиск">
       </form>
-      <a class="bookmarks" href="#">Закладки:0</a>
-      <a class="cart" href="#">Корзина:0</a>
-      <a class="checkout" href="#">Оформить заказ</a>
+      <div class="shop-menu">
+        <a class="shop bookmarks" href="#">Закладки:0</a>
+        <a class="shop cart" href="#">Корзина:0</a>
+        <a class="shop checkout" href="#">Оформить заказ</a>
+      </div>
     </div>
     <div class="middle-header">
       <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
