@@ -493,7 +493,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts {
-  width: 122px;
+  width: 300px;
   /* Временно для сетки */
   min-height: 293px;
 }
@@ -515,11 +515,13 @@ input[type="radio"].visually-hidden {
 
 .footer-logo {
   width: 220px;
-  height: 68px;
+  min-height: 68px;
+  margin-bottom: 32px;
+  display: block;
 }
 
 .upper-footer-contacts {
-  width: 322px;
+  width: 323px;
 }
 
 .footer-navigation-list,
@@ -537,6 +539,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 547px;
   justify-content: space-between;
+  padding-top: 42px;
+  margin-bottom: 45px;
 }
 
 .footer-offers-list {
@@ -564,6 +568,16 @@ input[type="radio"].visually-hidden {
 .footer-rights {
   width: 227px;
 }
+
+.feedback a,
+.feedback b,
+.designed a,
+.designed b {
+  display: block;
+}
+
+
+
 
 .inner-page .main-header {
   margin-bottom: 25px;
