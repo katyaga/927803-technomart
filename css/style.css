@@ -1,12 +1,10 @@
 body {
   margin: 0;
-
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -14,14 +12,26 @@ a {
   text-decoration: none;
 }
 
-
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .header-logo {
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-
   background-color: #ee3643;
 }
 
@@ -30,9 +40,9 @@ a {
   line-height: 18px;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
-
   background-color: #293449;
 }
+
 .search span,
 .search label {
   font-size: 17px;
@@ -44,7 +54,6 @@ a {
   line-height: 17px;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
-
   background-color: #32425c;
 }
 
@@ -71,14 +80,12 @@ a {
 }
 
 .search input:hover {
-    background-color: #212a3a;
+  background-color: #212a3a;
 }
 
-.search input:hover {
-
+.search input:focus {
   background-color: #ffffff;
 }
-
 
 .site-navigation a:hover,
 .site-navigation a:active {
@@ -107,14 +114,12 @@ a {
 
 .checkout:active {
   color: rgba(255, 255, 255, 0.5);
-
   background-color: #518534;
 }
 
 .bookmarks:active,
 .cart:active {
   color: rgba(255, 255, 255, 0.6);
-
   background-color: #161d29;
 }
 
@@ -124,7 +129,6 @@ a {
   line-height: 23px;
   font-style: italic;
   font-family: "Cuprum", "Arial", sans-serif;
-
 }
 
 .header-contacts-phone {
@@ -132,9 +136,7 @@ a {
   line-height: 21px;
   color: #ee3643;
   font-family: "Cuprum", "Arial", sans-serif;
-
   border: 3px solid #ffffff;
-
 }
 
 .header-contacts-address {
@@ -151,7 +153,6 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-family: "Cuprum", "Arial", sans-serif;
-
   background-color: #ffffff;
 }
 
@@ -165,6 +166,7 @@ a {
 .header-user-navigation a:hover {
   color: #ee3643;
 }
+
 .header-user-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -181,14 +183,11 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
-
-
-
-
 .about-us,
 .contacts {
   background-color: #ffffff;
 }
+
 .about-us h2,
 .contacts h2 {
   font-size: 30px;
@@ -197,7 +196,6 @@ a {
   text-transform: uppercase;
   font-weight: 400;
 }
-
 
 .transport-company-list {
   font-size: 18px;
@@ -213,18 +211,13 @@ a {
   text-align: center;
   vertical-align: middle;
   font-family: "Cuprum", "Arial", sans-serif;
-
-
   background-color: #ee3643;
 }
-
-
 
 .footer-logo {
   color: #ffffff;
   font-size: 24px;
   text-transform: uppercase;
-
   background-color: #ee3643;
 }
 
@@ -236,7 +229,6 @@ a {
 .upper-footer {
   font-size: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
-
   background-color: #32425c;
 }
 
@@ -244,6 +236,7 @@ a {
 .footer-navigation-list a {
   color: #f3f7f9;
 }
+
 .footer-offers-list a {
   color: #ffd180;
 }
@@ -253,22 +246,21 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
-
   background-color: #293449;
 }
 
 .footer-social a {
   color: #ffffff;
-
   background-color: #212a3a;
 }
 
 .lower-footer b {
   font-weight: 400;
 }
+
 .footer-feedback,
 .footer-copyright {
-  color:#ffd180;
+  color: #ffd180;
 }
 
 .footer-offers-list a:hover,
@@ -280,10 +272,10 @@ a {
   color: rgba(255, 209, 128, 0.5);
 }
 
-
 .footer-navigation-list a:active {
   color: rgba(241, 245, 247, 0.5);
 }
+
 .footer-social a:hover,
 .footer-social a:active {
   background-color: #ee3643;
@@ -299,9 +291,6 @@ a {
   color: #ee3643;
 }
 
-
-
-
 .page-title {
   font-size: 30px;
   line-height: 30px;
@@ -309,12 +298,13 @@ a {
   color: #32425c;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
-
   background-color: #f2f6f8;
 }
+
 .breadcrumbs {
   list-style: none;
 }
+
 .breadcrumbs a {
   color: #000000;
   font-size: 13px;
@@ -331,29 +321,29 @@ a {
   line-height: 30px;
   font-weight: bold;
 }
+
 .filter label {
   font-size: 15px;
   line-height: 20px;
 }
+
 .filter-submit {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
-
   background-color: #ffffff;
 }
+
 .catalog-list {
   list-style: none;
   text-align: center;
 }
 
-
 .product-name {
   font-size: 18px;
   line-height: 20px;
 }
-
 
 .old-price,
 .new-price {
@@ -365,15 +355,18 @@ a {
 .product-name a {
   color: #000000;
 }
+
 .old-price {
   text-decoration: line-through;
   color: #999999;
 }
+
 .new-price {
   color: #ffffff;
   background: url("../img/price.png") center no-repeat;
 
 }
+
 .product-button {
   font-size: 14px;
   line-height: 18px;
@@ -382,15 +375,19 @@ a {
 .product-button-buy {
   background-color: #63a63e;
 }
+
 .product-button-buy:hover {
   background-color: #5fbb2d;
 }
+
 .product-button-buy:active {
   background-color: #518534;
 }
+
 .product-button-bookmark:hover {
   border-color: #32425c;
 }
+
 .product-button-bookmark:active {
   color: rgba(50, 66, 92, 0.3);
   border-color: rgba(50, 66, 92, 0.3);
@@ -403,28 +400,23 @@ a {
   text-transform: uppercase;
 }
 
-
-
-
-  /* сетка */
+/* сетка */
 
 .main-header {
   margin-bottom: 60px;
-
   /* Временно для сетки */
   min-height: 320px;
 }
+
 .header-top {
   display: flex;
   width: 100%;
-
-
   /* Временно для сетки */
   min-height: 42px;
 }
-.header-bottom {
 
-    /* Временно для сетки */
+.header-bottom {
+  /* Временно для сетки */
   min-height: 278px;
 }
 
@@ -432,6 +424,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -447,13 +440,12 @@ a {
 .search {
   width: 270px;
 }
+
 .shop-menu {
   width: 433px;
 }
 
-
 .site-navigation {
-
   /* Временно для сетки */
   min-height: 60px;
 }
@@ -463,54 +455,49 @@ a {
   margin: 0;
   padding: 0;
 }
-.middle-header {
+
+.header-bottom-1 {
   display: flex;
-  width: 940px;
-  margin: 0 auto;
-  align-items: center;
   padding: 42px;
   justify-content: space-between;
 }
+
 .headline {
   width: 196px;
 }
+
 .header-contacts {
   width: 270px;
 }
+
 .header-user-navigation {
   width: 300px;
 }
+
 .site-navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
-  width: 940px;
 }
 
-.columns {
-  display: flex;
-  justify-content: center;
-}
-.index-columns {
+.main-columns {
   display: flex;
   justify-content: space-between;
   padding-bottom: 85px;
-  width: 940px;
 }
 
 .about-us {
   width: 520px;
-
   /* Временно для сетки */
   min-height: 293px;
 }
+
 .contacts {
   width: 122px;
-
   /* Временно для сетки */
   min-height: 293px;
 }
+
 .transport-company-list {
   margin: 0;
   padding: 0;
@@ -520,22 +507,21 @@ a {
   display: flex;
   min-height: 193px;
 }
+
 .upper-footer .container {
   display: flex;
   justify-content: space-between;
-
 }
 
 .footer-logo {
   width: 220px;
   height: 68px;
-
 }
 
 .upper-footer-contacts {
   width: 322px;
-
 }
+
 .footer-navigation-list,
 .footer-offers-list {
   margin: 0;
@@ -545,37 +531,39 @@ a {
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
-
 }
+
 .footer-navigation-list {
   display: flex;
   width: 547px;
   justify-content: space-between;
 }
+
 .footer-offers-list {
   display: flex;
   width: 524px;
   justify-content: space-between;
 }
-.lower-footer .container{
+
+.lower-footer .container {
   display: flex;
   justify-content: space-between;
-
 }
-.footer-social ul{
+
+.footer-social ul {
   margin: 0;
   padding: 0;
 }
+
 .social-buttons {
   display: flex;
   width: 138px;
   justify-content: space-between;
 }
+
 .footer-rights {
   width: 227px;
 }
-
-
 
 .inner-page .main-header {
   margin-bottom: 25px;
@@ -591,19 +579,19 @@ a {
   margin-bottom: 20px;
   padding: 0;
   order: 1;
-
   min-height: 89px;
 }
+
 .breadcrumbs {
   display: flex;
   padding: 0;
   margin: 0;
   width: 268px;
   margin-bottom: 25px;
-
   /* Временно для сетки */
   min-height: 24px;
 }
+
 .breadcrumbs li {
   margin-right: 18px;
 }
@@ -614,13 +602,8 @@ a {
   min-height: 750px;
 }
 
-.column-sort-product {
-  width: 700px;
-
-}
 .catalog {
   width: 700px;
-
   /* Временно для сетки */
   min-height: 996px;
 }
@@ -629,6 +612,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 .sort {
   display: flex;
   margin-bottom: 20px;
@@ -642,10 +626,10 @@ a {
   margin: 0;
   list-style: none;
 }
+
 .product-item {
   width: 220px;
   margin-right: 20px;
-
   /* Временно для сетки */
   min-height: 318px;
 }
@@ -653,20 +637,20 @@ a {
 .product-item:nth-child(3n) {
   margin-right: 0;
 }
+
 .catalog-list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 52px;
-
 }
+
 .pagination-list {
   padding: 0;
   margin: 0;
   list-style: none;
   margin-bottom: 60px;
-
   /* Временно для сетки */
   min-height: 38px;
 }
