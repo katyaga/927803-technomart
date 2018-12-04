@@ -33,6 +33,7 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   text-transform: uppercase;
   background-color: #ee3643;
+  text-align: center;
 }
 
 .header-top {
@@ -205,7 +206,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   font-size: 14px;
-  line-height: 17.5px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -219,6 +220,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   text-transform: uppercase;
   background-color: #ee3643;
+  text-align: center;
 }
 
 .upper-footer ul,
@@ -316,6 +318,22 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.filters,
+.sort {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filters h2,
+.sort h2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sort a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .filter legend {
   font-size: 17px;
   line-height: 30px;
@@ -397,6 +415,21 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   border: 3px solid #63a63e;
   background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+}
+
+.about-product h3 {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
