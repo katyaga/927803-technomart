@@ -77,9 +77,24 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.site-navigation a {
+  padding-top: 20px;
+  padding-right: 31px;
+  padding-bottom: 20px;
+  padding-left: 31px;
+}
+
 .header-top a,
 .site-navigation a {
   color: #ffffff;
+}
+
+.site-navigation a:first-child {
+  padding-left: 33px;
+}
+
+.site-navigation a:last-child {
+  padding-right: 33px;
 }
 
 .search input[type="text"] {
@@ -155,7 +170,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.login-link,
+.header-user-navigation a,
 .user-profile-form,
 .user-profile-logout {
   color: #000000;
@@ -586,8 +601,12 @@ input[type="radio"].visually-hidden {
 .shop {
   width: 150px;
   /* Временно для сетки */
-  min-height: 42px;
   vertical-align: center;
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 22px;
+  padding-bottom: 14px;
+  padding-left: 20px;
 }
 
 .site-navigation {
@@ -600,6 +619,28 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
+.login-link-in {
+  width: 121px;
+  padding-top: 14px;
+  padding-right: 27px;
+  padding-bottom: 15px;
+  padding-left: 48px;
+  margin-right: 10px;
+  /* Временно для сетки */
+  min-height: 45px;
+}
+
+.login-link-reg {
+  width: 150px;
+  padding-top: 14px;
+  padding-right: 25px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  /* Временно для сетки */
+  min-height: 45px;
+}
+
 
 .header-bottom-1 {
   display: flex;
@@ -615,8 +656,10 @@ input[type="radio"].visually-hidden {
   width: 270px;
 }
 
-.header-user-navigation {
-  width: 300px;
+.header-user-navigation ul {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation {
