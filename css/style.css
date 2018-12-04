@@ -36,6 +36,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
+
 .header-top {
   font-size: 17px;
   line-height: 18px;
@@ -183,6 +191,99 @@ input[type="radio"].visually-hidden {
 .user-button a:active {
   color: rgba(50, 66, 92, 0.3);
 }
+
+.main-offers {
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.main-offers h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main-offers-materials {
+  background-color: #ffbf47;
+}
+
+.main-offers-tool {
+  background-color: #3bbce3;
+}
+
+.main-offers-mechanism {
+  background-color: #dc91d8;
+}
+
+.main-discount {
+  background-color: #8ed78f;
+}
+
+.main-delivery {
+  background-color: #ffc047;
+}
+
+.main-offers .button {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.slider .button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+}
+
+.slide-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.slider {
+  list-style: none;
+  /* Временно */
+  background-color: #999999;
+}
+
+.slider b {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-popular-products h2,
+.popular-manufacturers h2 {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #f9f5f0;
+  text-transform: uppercase;
+}
+
+.products-list {
+  list-style: none;
+  text-align: center;
+}
+
+.popular-manufacturers-list {
+  list-style: none;
+}
+
+.popular-manufacturers-item {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.services h2 {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 
 .about-us,
 .contacts {
@@ -456,6 +557,7 @@ input[type="radio"].visually-hidden {
 .header-top .container {
   display: flex;
   align-items: center;
+
 }
 
 .container {
