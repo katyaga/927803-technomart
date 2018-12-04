@@ -577,7 +577,17 @@ input[type="radio"].visually-hidden {
 }
 
 .shop-menu {
-  width: 433px;
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop {
+  width: 150px;
+  /* Временно для сетки */
+  min-height: 42px;
+  vertical-align: center;
 }
 
 .site-navigation {
@@ -668,6 +678,7 @@ input[type="radio"].visually-hidden {
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .footer-navigation-list {
@@ -710,9 +721,6 @@ input[type="radio"].visually-hidden {
 .designed b {
   display: block;
 }
-
-
-
 
 .inner-page .main-header {
   margin-bottom: 25px;
