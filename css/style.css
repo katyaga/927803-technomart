@@ -79,9 +79,9 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
   padding-top: 20px;
-  padding-right: 31px;
+  padding-right: 30px;
   padding-bottom: 20px;
-  padding-left: 31px;
+  padding-left: 30px;
 }
 
 .header-top a,
@@ -89,13 +89,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.site-navigation a:first-child {
-  padding-left: 33px;
-}
 
-.site-navigation a:last-child {
-  padding-right: 33px;
-}
 
 .search input[type="text"] {
   font: inherit;
@@ -130,6 +124,10 @@ input[type="radio"].visually-hidden {
 
 .checkout {
   background-color: #63a63e;
+}
+
+.inner-page .cart {
+  background-color: #ee3643;
 }
 
 .checkout:hover {
@@ -171,8 +169,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-user-navigation a,
-.user-profile-form,
-.user-profile-logout {
+.user-profile a {
   color: #000000;
   font-size: 21px;
   line-height: 21px;
@@ -299,6 +296,39 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.services ul {
+  list-style: none;
+}
+
+.services-slider h3 {
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #32425c;
+  font-size: 21px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-slider-button {
+  border: none;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: #33445a;
+  width: 240px;
+  /* Временно для сетки */
+  min-height: 61px;
+}
+
+.services-slider-button:hover {
+  background-color: #293449;
+}
+
+.services-slider-button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
 
 .about-us,
 .contacts {
@@ -587,6 +617,10 @@ input[type="radio"].visually-hidden {
   width: 220px;
 }
 
+.header-logo svg {
+  padding: 13px 54px 16px 55px;
+}
+
 .search {
   width: 270px;
 }
@@ -609,15 +643,16 @@ input[type="radio"].visually-hidden {
   padding-left: 20px;
 }
 
-.site-navigation {
-  /* Временно для сетки */
-  min-height: 60px;
-}
-
 .header-user-navigation ul,
 .site-navigation {
   margin: 0;
   padding: 0;
+}
+
+.site-navigation {
+  padding: 0 25px 0 22px;
+  /* Временно для сетки */
+  min-height: 60px;
 }
 
 .login-link-in {
@@ -703,9 +738,9 @@ input[type="radio"].visually-hidden {
 
 .footer-logo {
   width: 220px;
-  min-height: 68px;
   margin-bottom: 32px;
   display: block;
+  padding: 20px 41px 25px 41px;
 }
 
 .upper-footer-contacts {
@@ -736,6 +771,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 524px;
   justify-content: space-between;
+  padding-bottom: 75px;
 }
 
 .lower-footer .container {
@@ -776,10 +812,15 @@ input[type="radio"].visually-hidden {
 
 .page-title {
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
+}
+
+.page-title {
   order: 1;
-  min-height: 89px;
+  margin-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 30px;
 }
 
 .breadcrumbs {
@@ -800,6 +841,19 @@ input[type="radio"].visually-hidden {
   width: 220px;
   /* Временно для сетки */
   min-height: 750px;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filter-submit {
+  margin-top: 75px;
+  padding: 14px 39px 14px 39px;
 }
 
 .catalog {
