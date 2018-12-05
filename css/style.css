@@ -93,7 +93,6 @@ input[type="radio"].visually-hidden {
   font: inherit;
   background-color: #293449;
   border: none;
-  color: #ffffff;
   padding: 14px 0px 13px 0px;
 }
 
@@ -102,12 +101,22 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.search input:active {
+  color: #000000;
+}
+
+.search input {
+  color: #000000;
+}
+
 .search input:focus::-webkit-input-placeholder {
   color: #000000;
 }
+
 .search input:focus::-moz-placeholder {
   color: #000000;
 }
+
 .search input:focus::-ms-input-placeholder {
   color: #000000;
 }
