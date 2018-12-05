@@ -288,6 +288,10 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 }
 
+.services {
+  background-color: #f4f7f9;
+}
+
 .services h2 {
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
@@ -882,8 +886,9 @@ input[type="radio"].visually-hidden {
 }
 
 .product-item {
-  width: 220px;
+  width: 218px;
   margin-right: 20px;
+  border: 1px solid #e5e5e5;
   /* Временно для сетки */
   min-height: 318px;
 }
