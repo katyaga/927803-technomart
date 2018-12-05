@@ -89,20 +89,27 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-
-
 .search input[type="text"] {
   font: inherit;
   background-color: #293449;
   border: none;
+  color: #ffffff;
+  padding: 14px 0px 13px 0px;
 }
 
-.search input:hover {
+.search input::placeholder {
+  color: #ffffff;
+}
+
+.search input:hover,
+.search:hover {
   background-color: #212a3a;
 }
 
-.search input:focus {
+.search input:focus,
+.search:focus {
   background-color: #ffffff;
+  color: #000000;
 }
 
 .site-navigation a:hover,
@@ -847,8 +854,10 @@ input[type="radio"].visually-hidden {
   min-height: 750px;
 }
 
-.filters ul {
+.filter ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filters fieldset {
