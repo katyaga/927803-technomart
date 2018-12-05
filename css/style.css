@@ -102,7 +102,13 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.search input::placeholder:focus {
+.search input:focus::-webkit-input-placeholder {
+  color: #000000;
+}
+.search input:focus::-moz-placeholder {
+  color: #000000;
+}
+.search input:focus::-ms-input-placeholder {
   color: #000000;
 }
 
