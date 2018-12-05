@@ -99,6 +99,11 @@ input[type="radio"].visually-hidden {
 
 .search input::placeholder {
   color: #ffffff;
+  opacity: 1;
+}
+
+.search input::placeholder:focus {
+  color: #000000;
 }
 
 .search input:hover,
@@ -109,7 +114,6 @@ input[type="radio"].visually-hidden {
 .search input:focus,
 .search:focus {
   background-color: #ffffff;
-  color: #000000;
 }
 
 .site-navigation a:hover,
