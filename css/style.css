@@ -396,8 +396,8 @@ input[type="radio"].visually-hidden {
 .services-slider h3 {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
