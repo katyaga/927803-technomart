@@ -126,6 +126,22 @@
           <h2>Фильтр:</h2>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
+              <legend>Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"><input type="text" name="min-price" value="0"></label>
+                  <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-brand">
@@ -171,18 +187,26 @@
           <div class="sort">
             <h2>Сортировка:</h2>
             <ul class="sort-list">
-              <li><a href="#">По цене</a></li>
+              <li><a class="sort-item-current" href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По функционалу</a></li>
             </ul>
-            <a class="ask" href="#"><span  class="visually-hidde">По возрастанию</span></a>
-            <a class="desk" href="#"><span  class="visually-hidde">По убыванию</span></a>
+            <div class="sort-direction">
+              <a class="ask direction-current" href="#"><span class="visually-hidden">По возрастанию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
+                </svg>
+              </a>
+              <a class="desk" href="#"><span class="visually-hidden">По убыванию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#c5c5c5" d="M5.5 10L0 0h11"/>
+                </svg>
+              </a>
+            </div>
           </div>
-
 
           <ul class="catalog-list">
             <li class="product-item">
-
               <div class="product-photo">
                 <img src="img/perforator-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
               </div>
@@ -385,11 +409,12 @@
   </footer>
 
   <section class="modal modal-buy">
-    <h4 class="visually-hidden">Информация о покупке</h4>
-    <button class="modal-buy-close" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-    <b>Товар добавлен в корзину!</b>
+    <div class="modal-buy-top">
+      <h4 class="visually-hidden">Информация о покупке</h4>
+      <button class="modal-buy-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <b>Товар добавлен в корзину!</b>
     <div class="modal-buy-bottom">
       <a href="#" class="button">Оформить заказ</a>
       <a class="modal-continue button" href="#">Продолжить покупки</a>
