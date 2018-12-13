@@ -62,7 +62,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   font-size: 17px;
-  line-height: 18px;
+  line-height: 17px;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   background-color: #32425c;
@@ -81,10 +81,10 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   display: block;
 }
 
