@@ -207,7 +207,7 @@ input[type="radio"].visually-hidden {
   background-color: #63a63e;
 }
 
-.inner-page .cart {
+.cart-has-items {
   background-color: #ee3643;
 }
 
@@ -1051,6 +1051,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-offers {
@@ -1103,7 +1104,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-offers > .new::before {
-  content: '';
+  content: " ";
   width: 60px;
   height: 60px;
   top: 0;
@@ -1241,43 +1242,16 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
-  vertical-align: middle;
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Временно для сетки */
   min-height: 145px;
 }
 
-.bosch {
-  padding-top: 52px;
-}
-
-.makita {
-  padding-top: 48px;
-}
-
-.dewalt {
-  padding-top:46px;
-}
-
-.interskol {
-  padding-top: 48px;
-}
-
-.hitachi {
-  padding-top: 56px;
-}
-
-.lg {
-  padding-top: 33px;
-}
-
-.aeg {
-  padding-top: 21px;
-}
-
-.metabo {
-  padding-top: 32px;
+.manufacturer img {
+  margin: 0;
 }
 
 .popular-manufacturers {
@@ -2100,7 +2074,7 @@ fieldset:not(:first-child) > legend {
 
 .product-photo {
   margin-top: 27px;
-  margin-left: 0px;
+  margin-left: 0;
   height: 112px;
 }
 
@@ -2457,6 +2431,18 @@ fieldset:not(:first-child) > legend {
 .modal-continue {
   background-color: #ffffff;
   color: #000000;
+}
+
+.main-page .user-profile {
+  display:none;
+}
+/*
+.main-page .header-user-navigation {
+  display: none;
+}*/
+
+.inner-page .header-user-navigation {
+  display: none;
 }
 
 
