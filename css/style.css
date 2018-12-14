@@ -29,12 +29,12 @@ input[type="radio"].visually-hidden {
 }
 
 .header-logo {
-  color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  background-color: #ee3643;
+  color: #ffffff;
   text-align: center;
+  background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b72530;
 }
 
@@ -59,8 +59,8 @@ input[type="radio"].visually-hidden {
 .header-top {
   font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
   background-color: #293449;
 }
 
@@ -73,15 +73,15 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
   background-color: #32425c;
   box-shadow: inset 0 -5px #293449;
 }
 
 .header-bottom {
-  background-color: #f3f7f9;
   font-family: "Cuprum", "Arial", sans-serif;
+  background-color: #f3f7f9;
 }
 
 .header-top,
@@ -109,14 +109,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search input[type="text"] {
+  width: 221px;
+  padding: 12px 0 12px 1px;
   font: inherit;
   /*background-color: #293449;*/
   background-color: transparent;
   border: none;
   color: #ffffff;
-  padding: 12px 0 12px 1px;
   /*margin-left: 15px;*/
-  width: 221px;
   outline:none;
 }
 
@@ -126,18 +126,18 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
-  order: -1;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  padding: 12px 30px 30px 17px;
   width: 17px;
   height: 17px;
+  padding: 12px 30px 30px 17px;
+  box-sizing: border-box;
   background: none;
   border-width: 0;
   border-style: none;
   outline: 0;
   opacity: 0.3;
+  order: -1;
 }
 
 .search:hover,
@@ -156,10 +156,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
-.search input:focus {
-  color: #000000;
-}
-
 .search input:focus::-webkit-input-placeholder {
   color: #000000;
 }
@@ -173,8 +169,10 @@ input[type="radio"].visually-hidden {
 }
 
 .search input:focus {
+  color: #000000;
   background-color: #ffffff;
 }
+
 .search input:focus ~ .search-button path {
   fill: #ee3643;
 }
@@ -740,8 +738,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-
-
 .product-name {
   font-size: 18px;
   line-height: 20px;
@@ -768,7 +764,6 @@ input[type="radio"].visually-hidden {
 .new-price {
   color: #ffffff;
   background: url("../img/price.png") center no-repeat;
-
 }
 
 .product-button {
@@ -859,7 +854,6 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-
 }
 
 .header-logo {
@@ -1984,7 +1978,6 @@ fieldset:not(:first-child) > legend {
 .sort-list .sort-item-current {
   color: #ee3643;
   text-decoration: none;
-
 }
 
 .sort-direction {
@@ -2015,7 +2008,6 @@ fieldset:not(:first-child) > legend {
   margin-bottom: 20px;
   position: relative;
   box-sizing: border-box;
-  /* Временно для сетки */
 }
 
 .product-item:hover,
@@ -2169,15 +2161,6 @@ fieldset:not(:first-child) > legend {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 12px;
-
-
-  /*
-  background-image: url("../img/icon-home.svg");
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 12px;
-  /*left: 0;
-  top: 4px;*/
 }
 
 .breadcrumbs-current::after {
@@ -2311,14 +2294,7 @@ fieldset:not(:first-child) > legend {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 16px;
-
 }
-/*
-.modal-message {
-  position: absolute;
-  left: 289px;
-  top: 2538px;
-}*/
 
 .message-user-name,
  .message-user-email {
@@ -2404,7 +2380,7 @@ fieldset:not(:first-child) > legend {
   margin-top: -141px;
   margin-left: -310px;
   z-index: 100;
-  display: none;
+  /*display: none;*/
 }
 
 .modal-buy-top {
@@ -2435,15 +2411,16 @@ fieldset:not(:first-child) > legend {
 }
 
 .modal-buy b {
+  padding-left: 179px;
+  padding-top: 66px;
+  padding-bottom: 67px;
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
-  padding-left: 179px;
-  padding-top: 66px;
-  padding-bottom: 67px;
 }
 
 .modal-buy b::before {
@@ -2467,6 +2444,14 @@ fieldset:not(:first-child) > legend {
 .modal-buy-bottom a {
    display: block;
    width: 220px;
+}
+.modal-buy-bottom a:first-child:hover,
+.modal-buy-bottom a:first-child:focus {
+  background-color: #ca2c37;
+}
+
+.modal-buy-bottom a:first-child:active {
+  background-color: #ba2732;
 }
 
 .modal-continue {
