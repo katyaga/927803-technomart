@@ -36,6 +36,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b72530;
+  z-index: 0; /* Иначе исчезает тень в IE11 */
 }
 
 .header-logo:hover,
@@ -426,8 +427,6 @@ input[type="radio"].visually-hidden {
 .manufacturer {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .manufacturer:hover,
@@ -1240,15 +1239,13 @@ input[type="radio"].visually-hidden {
 
 .manufacturer {
   width: 220px;
-  background-color: #ffffff;
-  border: 1px solid #eaeaea;
   margin-bottom: 20px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   /* Временно для сетки */
-  min-height: 145px;
+  height: 145px;
 }
 
 .manufacturer img {
@@ -1538,34 +1535,35 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.vk::before {
+.social-button::before {
   content: " ";
   position: absolute;
-  background-image: url("../img/vk-icon.svg");
   background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.vk::before {
+  background-image: url("../img/vk-icon.svg");
   width: 26px;
   height: 15px;
-  left: 8px;
+  /*left: 8px;*/
 }
 
 .fb::before {
-  content: "";
-  position: absolute;
   background-image: url("../img/icon-fb.svg");
-  background-repeat: no-repeat;
   width: 12px;
   height: 22px;
-  left: 15px;
+  /*left: 15px;*/
 }
 
 .insta::before {
-  content: "";
-  position: absolute;
   background-image: url("../img/insta-icon.svg");
-  background-repeat: no-repeat;
   width: 21px;
   height: 21px;
-  left: 10px;
+  /*left: 10px;*/
 }
 
 .lower-footer .footer-rights {
@@ -2008,27 +2006,24 @@ fieldset:not(:first-child) > legend {
   margin: 0;
   list-style: none;
   display: flex;
-  margin-left: 240px;
   margin-bottom: 60px;
-  /* Временно для сетки */
-  min-height: 38px;
 }
+
 .pagination-item {
   margin: 0;
   padding: 0;
-  min-width: 38px;
   margin-right: 10px;
-  box-sizing: border-box;
 }
 
 .pagination-item a {
   padding: 0;
   margin: 0;
   display: block;
-  padding-top: 8px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-bottom: 9px;
+  padding-right: 14px;
+  box-sizing: border-box;
 }
 
 .pagination-item:last-child a {
@@ -2039,7 +2034,7 @@ fieldset:not(:first-child) > legend {
 .pagination-item-current a {
   background-color: #ee3643;
   color: #ffffff;
-  border: none;
+  border: 1px solid #ee3643;
 }
 
 .about-product {
@@ -2055,10 +2050,6 @@ fieldset:not(:first-child) > legend {
   padding-top: 65px;
   padding-bottom: 67px;
 }
-
-/*.product-buttons {
-  display: none;
-}*/
 
 .new .product-photo::before{
   content: '';
@@ -2096,21 +2087,21 @@ fieldset:not(:first-child) > legend {
 
 .product-buttons {
   position:absolute;
-  top:0;
+  top: 3px;
   left:0;
   width:218px;
-  height:92px;
+  min-height:92px;
   padding:40px 0;
   background-color:rgba(255,255,255, 1);
   z-index:5;
-  display: none;
+  /*display: none;*/
 }
 
 .product-button {
   margin: 0 auto;
   width: 135px;
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 .product-button-bookmark {
   padding:7px 0;
@@ -2162,7 +2153,7 @@ fieldset:not(:first-child) > legend {
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 18px;
+  left: 15px;
   opacity: 0.3;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
@@ -2355,7 +2346,7 @@ fieldset:not(:first-child) > legend {
   margin-top: -141px;
   margin-left: -310px;
   z-index: 100;
-  /*display: none;*/
+  display: none;
 }
 
 .modal-buy-top {
