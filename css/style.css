@@ -479,7 +479,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider-buttons::before {
-  content: " ";
+  content: "";
   position: absolute;
   width: 10px;
   height: 279px;
@@ -1104,7 +1104,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-offers > .new::before {
-  content: " ";
+  content: "";
   width: 60px;
   height: 60px;
   top: 0;
@@ -1536,7 +1536,7 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button::before {
-  content: " ";
+  content: "";
   position: absolute;
   background-repeat: no-repeat;
   left: 50%;
@@ -1837,7 +1837,7 @@ fieldset:not(:first-child) > legend {
 }
 
 .price-controls::after {
-  content: " ";
+  content: "";
   position: absolute;
   width: 10px;
   height: 1px;
@@ -2401,7 +2401,7 @@ fieldset:not(:first-child) > legend {
 }
 
 .modal-buy b::before {
-  content: " ";
+  content: "";
   width: 66px;
   height: 66px;
   position: absolute;
