@@ -2290,6 +2290,7 @@ fieldset:not(:first-child) > legend {
 }
 
 .modal-map p {
+  margin: 0;
   padding: 0;
 }
 
