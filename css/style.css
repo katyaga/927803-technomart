@@ -524,15 +524,15 @@ input[type="radio"].visually-hidden {
   top: 212px;
 }
 
-.choice-slide button {
+.dot {
   width: 10px;
   height: 10px;
   margin-right: 10px;
   background: none;
   border: solid 2px #fff;
+  background-color: #ffffff;
   outline: 0;
   padding: 0;
-  background-color: red;
   border-radius: 50%;
 }
 
@@ -1132,14 +1132,6 @@ input[type="radio"].visually-hidden {
   height: 266px;
 }
 
-.slide-perf {
-  display: none;
-}
-
-.slide-drill {
-  display: block;
-}
-
 .main-slider h3,
 .main-slider b,
 .main-slider a {
@@ -1273,10 +1265,10 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.active .services-slider-button,
-.active .services-slider-button:hover,
-.active .services-slider-button:focus,
-.active .services-slider-button:active {
+.active.services-slider-button,
+.active.services-slider-button:hover,
+.active.services-slider-button:focus,
+.active.services-slider-button:active {
   background-color: #ffffff;
   color: #32425c;
 }
@@ -1320,9 +1312,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
 }
 
+.service {
+  display: none;
+}
+
 /*.slide-delivery {
   display: none;
-}*/
+}
 
 .slide-warranty {
   display: none;
@@ -1330,7 +1326,7 @@ input[type="radio"].visually-hidden {
 
 .slide-loan {
   display: none;
-}
+}*/
 
 .slide-loan p {
   margin-bottom: 31px;
@@ -2487,6 +2483,22 @@ fieldset:not(:first-child) > legend {
   80% {
     transform: translateX(10px);
   }
+}
+
+.slide {
+  display: none;
+}
+
+.slide-active {
+  display: block;
+}
+
+.slide-2-active {
+  display: inline-block;
+}
+
+.dot-active {
+  background-color: red;
 }
 
 

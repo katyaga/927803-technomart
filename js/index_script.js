@@ -89,11 +89,77 @@ map_close.addEventListener("click", function (evt) {
 
 var slide_back = document.querySelector(".button-slider-back");
 var slide_next = document.querySelector(".button-slider-next");
-var slide = document.querySelectorAll(".slider li");
-var index = 0; // Индекс текущего слайда
+var slider = document.querySelector(".slider");
+var dots = document.querySelectorAll(".main-slider .dot");
+var slides = slider.querySelectorAll(".slide");
 
+
+function get_active_slide() {
+  return slider.querySelector(".slide-active");
+}
+
+slide_next.addEventListener("click", function (evt) {
+  var active_slide = get_active_slide();
+  if (active_slide.nextElementSibling) {
+    active_slide.nextElementSibling.classList.add("slide-active");
+    active_slide.classList.remove("slide-active");
+
+    var k = Array.from(slides).indexOf(active_slide.nextElementSibling);
+    var target_dot = Array.from(dots)[k];
+    document.querySelector(".dot-active").classList.remove("dot-active");
+    target_dot.classList.add("dot-active");
+  }
+});
 
 slide_back.addEventListener("click", function (evt) {
+  var active_slide = get_active_slide();
+  if (active_slide.previousElementSibling) {
+    active_slide.previousElementSibling.classList.add("slide-active");
+    active_slide.classList.remove("slide-active");
 
+    var k = Array.from(slides).indexOf(active_slide.previousElementSibling);
+    var target_dot = Array.from(dots)[k];
+    document.querySelector(".dot-active").classList.remove("dot-active");
+    target_dot.classList.add("dot-active");
+  }
 });
+
+document.querySelector(".choice-slide").addEventListener("click",function(evt) {
+  var dot = evt.target;
+
+  if(dot && dot.nodeName === "BUTTON") {
+    var k = Array.from(dots).indexOf(dot);
+    var target_slide = Array.from(slides)[k];
+
+    console.log(dot.innerText + " was clicked");
+    document.querySelector(".dot-active").classList.remove("dot-active");
+    dot.classList.add("dot-active");
+
+    document.querySelector(".slide-active").classList.remove("slide-active");
+    target_slide.classList.add("slide-active");
+
+  }
+});
+
+var slider_2 = document.querySelector(".slider-2");
+var buttons = document.querySelectorAll(".services-slider-button");
+var slides_2 = slider_2.querySelectorAll(".service");
+
+document.querySelector(".services-slider-buttons").addEventListener("click",function(evt) {
+  var button = evt.target;
+  console.log(button);
+
+  if (button) {
+    var k = Array.from(buttons).indexOf(button);
+    var target_slide = Array.from(slides_2)[k];
+
+    console.log(button.innerText + " was clicked");
+    document.querySelector(".active").classList.remove("active");
+    button.classList.add("active");
+
+    slider_2.querySelector(".slide-2-active").classList.remove("slide-2-active");
+    target_slide.classList.add("slide-2-active");
+  }
+});
+
 
