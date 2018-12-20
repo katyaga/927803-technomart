@@ -90,50 +90,64 @@ map_close.addEventListener("click", function (evt) {
 
 
 
-/*
 
 var slide_back = document.querySelector(".button-slider-back");
 var slide_next = document.querySelector(".button-slider-next");
 var slider = document.querySelector(".slider");
+
 var active_dot = document.querySelector(".dot-active");
-var first_dot = document.querySelector(".dot:first-child");
-var second_dot = document.querySelector(".dot:last-child");
-var first_slide = slider.querySelector(".slide:first-child");
-var second_slide = slider.querySelector(".slide:last-child");
+var active_slide = document.querySelector(".slide-active");
 var dots = document.querySelectorAll(".main-slider .dot");
+var slides = document.querySelectorAll(".slide");
+
+
+var set_active_dot = function (dot) {
+  if (active_dot) {
+    active_dot.classList.remove("dot-active");
+  }
+  dot.classList.add("dot-active");
+  active_dot = dot;
+};
+
+var set_active_slide = function (slide) {
+  if (active_slide) {
+    active_slide.classList.remove("slide-active");
+  }
+  slide.classList.add("slide-active");
+  active_slide = slide;
+};
+
+var add_click_handler = function (dot, slide) {
+  dot.addEventListener('click', function () {
+    if (dot !== "dot-active") {
+      set_active_dot(dot);
+      set_active_slide(slide);
+    }
+  });
+};
+
+for (var k = 0; k < slides.length; k++) {
+  add_click_handler(dots[k], slides[k]);
+}
 
 
 slide_next.addEventListener("click", function (evt) {
-  var current_slide = slider.querySelector(".slide-active");
-  if (current_slide.nextElementSibling) {
-    current_slide.nextElementSibling.classList.add("slide-active");
-    current_slide.classList.remove("slide-active");
+  var active_slide = slider.querySelector(".slide-active");
+  if (active_slide.nextElementSibling) {
+    active_slide.nextElementSibling.classList.add("slide-active");
+    active_slide.classList.remove("slide-active");
+
   }
 });
 
 slide_back.addEventListener("click", function (evt) {
-  var current_slide = slider.querySelector(".slide-active");
-  if (current_slide.previousElementSibling) {
-    current_slide.previousElementSibling.classList.add("slide-active");
-    current_slide.classList.remove("slide-active");
+  var active_slide = slider.querySelector(".slide-active");
+  if (active_slide.previousElementSibling) {
+    active_slide.previousElementSibling.classList.add("slide-active");
+    active_slide.classList.remove("slide-active");
   }
 });
 
-dot.addEventListener("click",function(evt) {
-
-  if(!active_dot) {
-    var k = .indexOf(dot);
-    var target_slide = Array.from(slides)[k];
-
-    console.log(dot.innerText + " was clicked");
-    document.querySelector(".dot-active").classList.remove("dot-active");
-    dot.classList.add("dot-active");
-
-    document.querySelector(".slide-active").classList.remove("slide-active");
-    target_slide.classList.add("slide-active");
-
-  }
-});
 
 
 /*
@@ -196,23 +210,34 @@ var active_button_2 = document.querySelector(".active");
 var buttons = document.querySelectorAll(".services-slider-button");
 var slides_2 = slider_2.querySelectorAll(".service");
 
-buttons.forEach()) {
-  addEventListener("click", function (evt) {
-
-    if (!active_button_2) {
-      active_button_2.classList.remove("active");
-      buttons[i].classList.add("active");
-
-      active_slide_2.classList.remove("slide-2-active");
-      slides_2[i].classList.add("slide-2-active");
-    } else {
-
-    }
+var setActiveButton = function (button) {
+  if (active_button_2) {
+    active_button_2.classList.remove("active");
   }
-  )
+  button.classList.add("active");
+  active_button_2 = button;
+};
+
+var setActiveSlide = function (slide) {
+  if (active_slide_2) {
+    active_slide_2.classList.remove("slide-2-active");
+  }
+  slide.classList.add("slide-2-active");
+  active_slide_2 = slide;
+};
+
+var addClickHandler = function (button, slide) {
+  button.addEventListener('click', function () {
+    if (button !== "active") {
+      setActiveButton(button);
+      setActiveSlide(slide);
+    }
+  });
+};
+
+for (var i = 0; i < slides_2.length; i++) {
+  addClickHandler(buttons[i], slides_2[i]);
 }
-
-
 
 
 
