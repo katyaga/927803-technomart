@@ -2128,7 +2128,7 @@ fieldset:not(:first-child) > legend {
   display: none;
 }
 
-.breadcrumb::after {
+.breadcrumb:not(.home)::after {
   content: "";
   position: absolute;
   background-image: url("../img/icon-right-small.svg");
@@ -2138,6 +2138,19 @@ fieldset:not(:first-child) > legend {
   right: -25px;
   top: 2px;
 }
+
+.home::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  right: -23px;
+  top: 5px;
+}
+
+
 
 .product-button-buy {
   position: relative;
