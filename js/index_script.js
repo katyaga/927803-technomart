@@ -87,6 +87,56 @@ map_close.addEventListener("click", function (evt) {
   map_popup.classList.remove("modal-show");
 });
 
+
+
+
+/*
+
+var slide_back = document.querySelector(".button-slider-back");
+var slide_next = document.querySelector(".button-slider-next");
+var slider = document.querySelector(".slider");
+var active_dot = document.querySelector(".dot-active");
+var first_dot = document.querySelector(".dot:first-child");
+var second_dot = document.querySelector(".dot:last-child");
+var first_slide = slider.querySelector(".slide:first-child");
+var second_slide = slider.querySelector(".slide:last-child");
+var dots = document.querySelectorAll(".main-slider .dot");
+
+
+slide_next.addEventListener("click", function (evt) {
+  var current_slide = slider.querySelector(".slide-active");
+  if (current_slide.nextElementSibling) {
+    current_slide.nextElementSibling.classList.add("slide-active");
+    current_slide.classList.remove("slide-active");
+  }
+});
+
+slide_back.addEventListener("click", function (evt) {
+  var current_slide = slider.querySelector(".slide-active");
+  if (current_slide.previousElementSibling) {
+    current_slide.previousElementSibling.classList.add("slide-active");
+    current_slide.classList.remove("slide-active");
+  }
+});
+
+dot.addEventListener("click",function(evt) {
+
+  if(!active_dot) {
+    var k = .indexOf(dot);
+    var target_slide = Array.from(slides)[k];
+
+    console.log(dot.innerText + " was clicked");
+    document.querySelector(".dot-active").classList.remove("dot-active");
+    dot.classList.add("dot-active");
+
+    document.querySelector(".slide-active").classList.remove("slide-active");
+    target_slide.classList.add("slide-active");
+
+  }
+});
+
+
+/*
 var slide_back = document.querySelector(".button-slider-back");
 var slide_next = document.querySelector(".button-slider-next");
 var slider = document.querySelector(".slider");
@@ -103,7 +153,6 @@ slide_next.addEventListener("click", function (evt) {
   if (active_slide.nextElementSibling) {
     active_slide.nextElementSibling.classList.add("slide-active");
     active_slide.classList.remove("slide-active");
-
     var k = Array.from(slides).indexOf(active_slide.nextElementSibling);
     var target_dot = Array.from(dots)[k];
     document.querySelector(".dot-active").classList.remove("dot-active");
@@ -139,18 +188,44 @@ document.querySelector(".choice-slide").addEventListener("click",function(evt) {
     target_slide.classList.add("slide-active");
 
   }
-});
+});*/
 
 var slider_2 = document.querySelector(".slider-2");
+var active_slide_2 = document.querySelector(".slide-2-active");
+var active_button_2 = document.querySelector(".active");
 var buttons = document.querySelectorAll(".services-slider-button");
 var slides_2 = slider_2.querySelectorAll(".service");
 
+buttons.forEach()) {
+  addEventListener("click", function (evt) {
+
+    if (!active_button_2) {
+      active_button_2.classList.remove("active");
+      buttons[i].classList.add("active");
+
+      active_slide_2.classList.remove("slide-2-active");
+      slides_2[i].classList.add("slide-2-active");
+    } else {
+
+    }
+  }
+  )
+}
+
+
+
+
+
+
+
+/*
 document.querySelector(".services-slider-buttons").addEventListener("click",function(evt) {
   var button = evt.target;
   console.log(button);
 
   if (button) {
-    var k = Array.from(buttons).indexOf(button);
+
+    var k = buttons.indexOf(button);
     var target_slide = Array.from(slides_2)[k];
 
     console.log(button.innerText + " was clicked");
@@ -162,4 +237,4 @@ document.querySelector(".services-slider-buttons").addEventListener("click",func
   }
 });
 
-
+*/
