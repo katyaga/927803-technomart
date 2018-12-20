@@ -87,10 +87,6 @@ map_close.addEventListener("click", function (evt) {
   map_popup.classList.remove("modal-show");
 });
 
-
-
-
-
 var slide_back = document.querySelector(".button-slider-back");
 var slide_next = document.querySelector(".button-slider-next");
 var slider = document.querySelector(".slider");
@@ -130,79 +126,6 @@ for (var k = 0; k < slides.length; k++) {
   add_click_handler(dots[k], slides[k]);
 }
 
-/*
-slide_next.addEventListener("click", function (evt) {
-  var active_slide = slider.querySelector(".slide-active");
-  if (active_slide.nextElementSibling) {
-    active_slide.nextElementSibling.classList.add("slide-active");
-    active_slide.classList.remove("slide-active");
-
-  }
-});
-
-slide_back.addEventListener("click", function (evt) {
-  var active_slide = slider.querySelector(".slide-active");
-  if (active_slide.previousElementSibling) {
-    active_slide.previousElementSibling.classList.add("slide-active");
-    active_slide.classList.remove("slide-active");
-  }
-});
-*/
-
-
-/*
-var slide_back = document.querySelector(".button-slider-back");
-var slide_next = document.querySelector(".button-slider-next");
-var slider = document.querySelector(".slider");
-var dots = document.querySelectorAll(".main-slider .dot");
-var slides = slider.querySelectorAll(".slide");
-
-
-function get_active_slide() {
-  return slider.querySelector(".slide-active");
-}
-
-slide_next.addEventListener("click", function (evt) {
-  var active_slide = get_active_slide();
-  if (active_slide.nextElementSibling) {
-    active_slide.nextElementSibling.classList.add("slide-active");
-    active_slide.classList.remove("slide-active");
-    var k = Array.from(slides).indexOf(active_slide.nextElementSibling);
-    var target_dot = Array.from(dots)[k];
-    document.querySelector(".dot-active").classList.remove("dot-active");
-    target_dot.classList.add("dot-active");
-  }
-});
-
-slide_back.addEventListener("click", function (evt) {
-  var active_slide = get_active_slide();
-  if (active_slide.previousElementSibling) {
-    active_slide.previousElementSibling.classList.add("slide-active");
-    active_slide.classList.remove("slide-active");
-
-    var k = Array.from(slides).indexOf(active_slide.previousElementSibling);
-    var target_dot = Array.from(dots)[k];
-    document.querySelector(".dot-active").classList.remove("dot-active");
-    target_dot.classList.add("dot-active");
-  }
-});
-
-document.querySelector(".choice-slide").addEventListener("click",function(evt) {
-  var dot = evt.target;
-
-  if(dot && dot.nodeName === "BUTTON") {
-    var k = Array.from(dots).indexOf(dot);
-    var target_slide = Array.from(slides)[k];
-
-    console.log(dot.innerText + " was clicked");
-    document.querySelector(".dot-active").classList.remove("dot-active");
-    dot.classList.add("dot-active");
-
-    document.querySelector(".slide-active").classList.remove("slide-active");
-    target_slide.classList.add("slide-active");
-
-  }
-});*/
 
 var slider_2 = document.querySelector(".slider-2");
 var active_slide_2 = document.querySelector(".slide-2-active");
@@ -239,27 +162,45 @@ for (var i = 0; i < slides_2.length; i++) {
   addClickHandler(buttons[i], slides_2[i]);
 }
 
+/* Для каталога */
+var buy_links = document.querySelectorAll(".product-button-buy");
+var buy_popup = document.querySelector(".modal-buy");
+var buy_close = buy_popup.querySelector(".modal-buy-close");
+var checkout = buy_popup.querySelector(".modal-checkout");
+var buy_continue = buy_popup.querySelector(".modal-continue");
 
 
 
+buy_links.forEach(function(buy_link, i, arr) {
+  buy_link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    buy_popup.classList.add("modal-show");
+  });
+});
 
-/*
-document.querySelector(".services-slider-buttons").addEventListener("click",function(evt) {
-  var button = evt.target;
-  console.log(button);
+buy_close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buy_popup.classList.remove("modal-show");
+});
 
-  if (button) {
+checkout.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buy_popup.classList.remove("modal-show");
+});
 
-    var k = buttons.indexOf(button);
-    var target_slide = Array.from(slides_2)[k];
+buy_continue.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buy_popup.classList.remove("modal-show");
+});
 
-    console.log(button.innerText + " was clicked");
-    document.querySelector(".active").classList.remove("active");
-    button.classList.add("active");
-
-    slider_2.querySelector(".slide-2-active").classList.remove("slide-2-active");
-    target_slide.classList.add("slide-2-active");
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (buy_popup.classList.contains("modal-show")) {
+      buy_popup.classList.remove("modal-show");
+    }
   }
 });
 
-*/
+
+
