@@ -30,12 +30,16 @@ input[type="radio"].visually-hidden {
 
 .header-logo {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b72530;
+  display: block;
+  padding-top: 11px;
+  box-sizing: border-box;
   z-index: 0; /* Иначе исчезает тень в IE11 */
 }
 
@@ -199,8 +203,7 @@ input[type="radio"].visually-hidden {
 .bookmarks:focus,
 .bookmarks:active,
 .cart:hover,
-.cart:focus,
-.cart:active {
+.cart:focus {
   background-color: #212a3a;
 }
 
@@ -208,7 +211,16 @@ input[type="radio"].visually-hidden {
   background-color: #63a63e;
 }
 
-.cart-has-items {
+.bookmarks:active,
+.cart:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.cart-has-items,
+.cart-has-items:hover,
+.cart-has-items:focus,
+.cart-has-items:active {
   background-color: #ee3643;
 }
 
@@ -220,12 +232,6 @@ input[type="radio"].visually-hidden {
 .checkout:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
-}
-
-.bookmarks:active,
-.cart:active {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #161d29;
 }
 
 .headline {
@@ -578,7 +584,8 @@ input[type="radio"].visually-hidden {
 
 .footer-logo {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 30px;
   text-transform: uppercase;
   background-color: #ee3643;
   text-align: center;
@@ -863,10 +870,6 @@ input[type="radio"].visually-hidden {
   width: 220px;
 }
 
-.header-logo svg {
-  padding: 13px 54px 11px 55px;
-}
-
 .search {
   width: 270px;
 }
@@ -1135,22 +1138,15 @@ input[type="radio"].visually-hidden {
   height: 266px;
 }
 
-.main-slider h3,
-.main-slider b,
+.slide div,
 .main-slider a {
   position: absolute;
   z-index: 10;
 }
 
-.main-slider h3 {
+.slide div {
   left: 24px;
   top: 23px;
-}
-
-.main-slider b {
-  font-weight: 400;
-  left: 25px;
-  top: 60px;
 }
 
 .main-slider a {
@@ -1465,10 +1461,11 @@ input[type="radio"].visually-hidden {
 
 .footer-logo {
   width: 220px;
+  height: 68px;
   box-sizing: border-box;
   margin-bottom: 28px;
   display: block;
-  padding: 20px 41px 20px 41px;
+  padding-top: 18px;
   box-shadow: inset 0 -5px rgba(0, 0, 0, 0.24);
 }
 
@@ -1790,6 +1787,15 @@ input[type="radio"].visually-hidden {
   margin-top: 56px;
 }
 
+.filter-submit:hover,
+.filter-submit:focus {
+  border-color: #bdc6ca;
+}
+
+.filter-submit:active {
+  border-color: #ee3643;
+}
+
 .filters legend {
   margin-bottom: 14px;
 }
@@ -1962,7 +1968,7 @@ fieldset:not(:first-child) > legend {
 
 .product-item {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
   position: relative;
@@ -2079,8 +2085,7 @@ fieldset:not(:first-child) > legend {
   min-height:92px;
   padding:40px 0;
   background-color:rgba(255,255,255, 1);
-  z-index:5;
-  display: none;
+  z-index:-5;
 }
 
 .product-button {
@@ -2096,7 +2101,7 @@ fieldset:not(:first-child) > legend {
 
 .product-item:hover .product-buttons,
 .product-item:focus .product-buttons {
-  display: block;
+  z-index: 100;
 }
 
 .breadcrumb {
