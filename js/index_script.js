@@ -130,7 +130,7 @@ for (var k = 0; k < slides.length; k++) {
   add_click_handler(dots[k], slides[k]);
 }
 
-
+/*
 slide_next.addEventListener("click", function (evt) {
   var active_slide = slider.querySelector(".slide-active");
   if (active_slide.nextElementSibling) {
@@ -147,7 +147,7 @@ slide_back.addEventListener("click", function (evt) {
     active_slide.classList.remove("slide-active");
   }
 });
-
+*/
 
 
 /*
