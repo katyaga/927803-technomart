@@ -460,6 +460,7 @@ input[type="radio"].visually-hidden {
 .services p {
   margin: 0;
   padding: 0;
+  width: 400px;
 }
 
 .services ul {

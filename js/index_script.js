@@ -1,10 +1,10 @@
 var message_link = document.querySelector(".contacts .button");
 var message_popup = document.querySelector(".modal-message");
-var close = message_popup.querySelector(".modal-message-close");
-var user_name = message_popup.querySelector(".user-name");
-var e_mail = message_popup.querySelector(".user-email");
-var message = message_popup.querySelector(".user-message");
-var form = message_popup.querySelector(".message-form");
+var close = document.querySelector(".modal-message-close");
+var user_name = document.querySelector(".user-name");
+var e_mail = document.querySelector(".user-email");
+var message = document.querySelector(".user-message");
+var form = document.querySelector(".message-form");
 var isStorageSupport = true;
 var storage_user_name = "";
 var storage_e_mail = "";
