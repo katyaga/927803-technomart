@@ -2120,7 +2120,7 @@ fieldset:not(:first-child) > legend {
   height: 18px;
   background: url("../img/icon-home.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 4px;
   background-size: 14px 12px;
 }
 
