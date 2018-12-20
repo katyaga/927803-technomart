@@ -2085,7 +2085,8 @@ fieldset:not(:first-child) > legend {
   min-height:92px;
   padding:40px 0;
   background-color:rgba(255,255,255, 1);
-  z-index:-5;
+  z-index: 5;
+  display: none;
 }
 
 .product-button {
@@ -2100,8 +2101,8 @@ fieldset:not(:first-child) > legend {
 }
 
 .product-item:hover .product-buttons,
-.product-item:focus .product-buttons {
-  z-index: 100;
+.product-item:focus-within .product-buttons {
+  display: block;
 }
 
 .breadcrumb {
