@@ -77,7 +77,7 @@ if(message_popup) {
 
 var map_link = document.querySelector(".map");
 var map_popup = document.querySelector(".modal-map");
-if(message_popup) {
+if(map_popup) {
 
   var map_close = map_popup.querySelector(".modal-map-close");
 
