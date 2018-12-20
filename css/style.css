@@ -2100,6 +2100,10 @@ fieldset:not(:first-child) > legend {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.product-item:hover .product-buttons {
+  display: block;
+}
+
 .product-item:hover .product-buttons,
 .product-item:focus-within .product-buttons {
   display: block;
@@ -2112,7 +2116,6 @@ fieldset:not(:first-child) > legend {
 
 .home {
   display: block;
-  text-indent: -9999px;
   width: 14px;
   height: 18px;
   background: url("../img/icon-home.svg");
@@ -2133,7 +2136,7 @@ fieldset:not(:first-child) > legend {
   width: 8px;
   height: 12px;
   right: -25px;
-  top: 4px;
+  top: 2px;
 }
 
 .product-button-buy {
