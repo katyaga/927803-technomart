@@ -1882,6 +1882,10 @@ fieldset:not(:first-child) > legend {
   background: #a9e6c7;
 }
 
+.min-price {
+  margin-right: 30px;
+}
+
 .range-controls .toggle {
   position: absolute;
   top: 31px;
