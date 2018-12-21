@@ -1970,6 +1970,7 @@ fieldset:not(:first-child) > legend {
   width: 220px;
   min-height: 318px;
   border: 1px solid #e5e5e5;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
   box-sizing: border-box;
