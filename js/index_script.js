@@ -211,3 +211,23 @@ window.addEventListener("keydown", function (evt) {
 
 
 
+function a1() {
+  var x1 = 1;
+
+  function a2() {
+    var x2 = 2;
+
+    function a3() {
+      var x3 = 3;
+
+      function a4() {
+        var x4 = 4;
+      }
+
+      function a5() {
+        var x5 = 5;
+      }
+
+    }
+  }
+}

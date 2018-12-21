@@ -2135,7 +2135,7 @@ fieldset:not(:first-child) > legend {
   width: 8px;
   height: 12px;
   right: 14px;
-  top: 2px;
+  top: 4px;
 }
 
 .breadcrumbs li:first-child::before {
