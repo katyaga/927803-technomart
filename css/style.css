@@ -9,6 +9,16 @@ body {
   position: relative;
 }
 
+html {
+  background-image: url('../img/technomart-catalog.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+body {
+  opacity: 0.5;
+}
+
 a {
   text-decoration: none;
 }
@@ -113,6 +123,10 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
+.search input {
+  height: 42px;
+}
+
 .search input[type="text"] {
   width: 221px;
   padding: 12px 0 12px 1px;
@@ -121,6 +135,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: none;
   color: #ffffff;
+  box-sizing: border-box;
   /*margin-left: 15px;*/
   outline:none;
 }
@@ -1811,13 +1826,19 @@ fieldset:not(:first-child) > legend {
 
 .price-controls {
   display: flex;
+  width: 220px;
   justify-content: space-between;
   position: relative;
   margin-bottom: 25px;
 }
 
+.price-controls label {
+  width: 95px;
+}
+
 .price-controls input {
   width: 95px;
+  height: 38px;
   font-size: 17px;
   line-height: 18px;
   padding-top: 9px;
@@ -1940,7 +1961,10 @@ fieldset:not(:first-child) > legend {
 }
 
 .sort-list a:active,
-.sort-list .sort-item-current {
+.sort-list .sort-item-current,
+.sort-list .sort-item-current:hover,
+.sort-list .sort-item-current:focus,
+.sort-list .sort-item-current:active {
   color: #ee3643;
   text-decoration: none;
 }
