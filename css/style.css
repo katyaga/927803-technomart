@@ -2110,8 +2110,11 @@ fieldset:not(:first-child) > legend {
 }
 
 .breadcrumb {
-  position: relative;
   margin-right: 40px;
+}
+
+.breadcrumbs li {
+  position: relative;
 }
 
 .home {
@@ -2124,30 +2127,20 @@ fieldset:not(:first-child) > legend {
   background-size: 14px 12px;
 }
 
-.breadcrumbs-current::after {
-  display: none;
-}
-
-.breadcrumb:not(.home)::after {
+.breadcrumbs li:not(:last-child)::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   width: 8px;
   height: 12px;
-  right: -25px;
+  right: 14px;
   top: 2px;
 }
 
-.home::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  width: 8px;
-  height: 12px;
-  right: -23px;
-  top: 5px;
+.breadcrumbs li:first-child::before {
+  right: 17px;
+  top: 4px;
 }
 
 .product-button-buy {
