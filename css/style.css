@@ -9,16 +9,6 @@ body {
   position: relative;
 }
 
-html {
-  background-image: url('../img/technomart-catalog.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-body {
-  opacity: 0.5;
-}
-
 a {
   text-decoration: none;
 }
@@ -131,12 +121,10 @@ input[type="radio"].visually-hidden {
   width: 221px;
   padding: 12px 0 12px 1px;
   font: inherit;
-  /*background-color: #293449;*/
   background-color: transparent;
   border: none;
   color: #ffffff;
   box-sizing: border-box;
-  /*margin-left: 15px;*/
   outline:none;
 }
 
@@ -408,7 +396,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* Временно */
   background-color: #999999;
 }
 
@@ -852,19 +839,16 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   margin-bottom: 59px;
-  /* Временно для сетки */
   min-height: 320px;
 }
 
 .header-top {
   display: flex;
   width: 100%;
-  /* Временно для сетки */
   min-height: 42px;
 }
 
 .header-bottom {
-  /* Временно для сетки */
   min-height: 278px;
 }
 
@@ -901,12 +885,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 150px;
   box-sizing: border-box;
-  /* Временно для сетки */
   padding-top: 12px;
   padding-bottom: 12px;
-  /*padding-right: 22px;
-  padding-left: 20px;
-  text-align: center;*/
 }
 
 .bookmarks {
@@ -968,7 +948,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   padding: 0 25px 0 22px;
-  /* Временно для сетки */
 }
 
 .header-bottom-1 {
@@ -1093,7 +1072,6 @@ input[type="radio"].visually-hidden {
   padding-left: 23px;
   box-sizing: border-box;
   position: relative;
-  /* Временно для сетки */
   min-height: 123px;
 }
 
@@ -1142,7 +1120,6 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   position: relative;
   box-sizing: border-box;
-  /* Временно для сетки */
   height: 266px;
 }
 
@@ -1250,7 +1227,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Временно для сетки */
   height: 145px;
 }
 
@@ -1331,18 +1307,6 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-/*.slide-delivery {
-  display: none;
-}
-
-.slide-warranty {
-  display: none;
-}
-
-.slide-loan {
-  display: none;
-}*/
-
 .slide-loan p {
   margin-bottom: 31px;
 }
@@ -1385,7 +1349,6 @@ input[type="radio"].visually-hidden {
 
 .about-us {
   width: 520px;
-  /* Временно для сетки */
   min-height: 293px;
 }
 
@@ -1423,7 +1386,6 @@ input[type="radio"].visually-hidden {
 
 .contacts {
   width: 300px;
-  /* Временно для сетки */
   min-height: 293px;
 }
 
@@ -1561,25 +1523,22 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/vk-icon.svg");
   width: 26px;
   height: 15px;
-  /*left: 8px;*/
 }
 
 .fb::before {
   background-image: url("../img/icon-fb.svg");
   width: 12px;
   height: 22px;
-  /*left: 15px;*/
 }
 
 .insta::before {
   background-image: url("../img/insta-icon.svg");
   width: 21px;
   height: 21px;
-  /*left: 10px;*/
 }
 
 .lower-footer .footer-rights {
-  width: 227px;
+  width: 228px;
   margin-top: 2px;
 }
 
@@ -1703,14 +1662,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-bottom: 17px;
-  /* Временно для сетки */
   min-height: 24px;
 }
 
 .filters {
   width: 220px;
   margin-bottom: 75px;
-  /* Временно для сетки */
   min-height: 750px;
 }
 
@@ -1910,7 +1867,6 @@ fieldset:not(:first-child) > legend {
 
 .catalog {
   width: 700px;
-  /* Временно для сетки */
   min-height: 996px;
 }
 
@@ -1939,7 +1895,6 @@ fieldset:not(:first-child) > legend {
   padding-left: 19px;
   padding-right: 17px;
   box-sizing: border-box;
-  /* Временно для сетки */
   min-height: 38px;
 }
 
@@ -2216,7 +2171,6 @@ fieldset:not(:first-child) > legend {
   border-color: #ee3643;
 }
 
-/*.message-form*/
 .modal-message {
   width: 620px;
   box-sizing: border-box;
@@ -2467,10 +2421,6 @@ fieldset:not(:first-child) > legend {
 .main-page .user-profile {
   display:none;
 }
-/*
-.main-page .header-user-navigation {
-  display: none;
-}*/
 
 .inner-page .header-user-navigation {
   display: none;
@@ -2493,7 +2443,6 @@ fieldset:not(:first-child) > legend {
     transform: translateY(0);
   }
 }
-
 
 @keyframes shake {
   0%,

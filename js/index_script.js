@@ -31,7 +31,6 @@ if(message_popup) {
       }
     } else {
       console.log(user_name);
-      // user_name.focus();
       message_popup.querySelector(".user-name").focus();
     }
   });
@@ -138,7 +137,7 @@ if(slider_2) {
   var buttons = document.querySelectorAll(".services-slider-button");
   var slides_2 = slider_2.querySelectorAll(".service");
 
-  var setActiveButton = function (button) {
+  var set_active_button = function (button) {
     if (active_button_2) {
       active_button_2.classList.remove("active");
     }
@@ -146,7 +145,7 @@ if(slider_2) {
     active_button_2 = button;
   };
 
-  var setActiveSlide = function (slide) {
+  var set_active_slide = function (slide) {
     if (active_slide_2) {
       active_slide_2.classList.remove("slide-2-active");
     }
@@ -154,17 +153,17 @@ if(slider_2) {
     active_slide_2 = slide;
   };
 
-  var addClickHandler = function (button, slide) {
+  var add_click_handler = function (button, slide) {
     button.addEventListener('click', function () {
       if (button !== "active") {
-        setActiveButton(button);
-        setActiveSlide(slide);
+        set_active_button(button);
+        set_active_slide(slide);
       }
     });
   };
 
   for (var i = 0; i < slides_2.length; i++) {
-    addClickHandler(buttons[i], slides_2[i]);
+    add_click_handler(buttons[i], slides_2[i]);
   }
 }
 
@@ -175,8 +174,6 @@ var buy_popup = document.querySelector(".modal-buy");
 var buy_close = buy_popup.querySelector(".modal-buy-close");
 var checkout = buy_popup.querySelector(".modal-checkout");
 var buy_continue = buy_popup.querySelector(".modal-continue");
-
-
 
 buy_links.forEach(function(buy_link, i, arr) {
   buy_link.addEventListener("click", function (evt) {
@@ -210,24 +207,3 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-
-function a1() {
-  var x1 = 1;
-
-  function a2() {
-    var x2 = 2;
-
-    function a3() {
-      var x3 = 3;
-
-      function a4() {
-        var x4 = 4;
-      }
-
-      function a5() {
-        var x5 = 5;
-      }
-
-    }
-  }
-}
