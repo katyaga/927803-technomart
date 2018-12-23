@@ -176,6 +176,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.search input:focus::placeholder {
+  color: #000000;
+}
+
 .search input:focus {
   color: #000000;
   background-color: #ffffff;
@@ -1251,8 +1255,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-right: 80px;
-  float: left;
   outline: none;
+}
+
+.services-slider {
+  display: flex;
 }
 
 .active.services-slider-button,
@@ -1672,7 +1679,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-brand label,
-.filter-supply label{
+.filter-supply label {
   padding-left: 35px;
 }
 
@@ -1739,7 +1746,7 @@ input[type="radio"].visually-hidden {
 .filter-supply input:hover + label::before,
 .filter-brand input:hover + label::before,
 .filter-supply input:focus + label::before,
-.filter-brand input:focus + label::before{
+.filter-brand input:focus + label::before {
   opacity: 1;
 }
 
@@ -1908,7 +1915,10 @@ fieldset:not(:first-child) > legend {
   align-items: center;
   margin-left: 139px;
   padding-right: 45px;
+  box-sizing: border-box;
+  min-height: 38px;
 }
+
 .sort-list a {
   text-decoration: underline dotted #ee3643;
 }
@@ -1935,17 +1945,20 @@ fieldset:not(:first-child) > legend {
   align-items: center;
 }
 
-.sort-direction a {
+.direction {
   display: block;
 }
 
-.sort-direction a:hover path,
-.sort-direction a:focus path {
+.direction:hover path,
+.direction:focus path {
   fill: #000000;
 }
 
-.sort-direction a:active path,
-.sort-direction .direction-current path{
+.direction:active path,
+.direction-current path,
+.direction-current:active path,
+.direction-current:hover path,
+.direction-current:focus path {
   fill: #ee3643;
 }
 
@@ -2027,7 +2040,7 @@ fieldset:not(:first-child) > legend {
   padding-bottom: 67px;
 }
 
-.new .product-photo::before{
+.new .product-photo::before {
   content: '';
   top: 0;
   right: 0;
@@ -2475,7 +2488,7 @@ fieldset:not(:first-child) > legend {
 }
 
 .slide-2-active {
-  display: inline-block;
+  display: block;
 }
 
 .dot-active {
