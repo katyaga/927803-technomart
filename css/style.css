@@ -795,7 +795,6 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   border: 3px solid #63a63e;
   background-color: #ffffff;
-  text-transform: uppercase;
 }
 
 .product-button-buy:hover,
@@ -840,6 +839,11 @@ input[type="radio"].visually-hidden {
 }
 
 /* сетка */
+html,
+body {
+  min-width: 960px;
+  min-height: 1750px;
+}
 
 .main-header {
   margin-bottom: 59px;
@@ -963,7 +967,7 @@ input[type="radio"].visually-hidden {
 }
 
 .headline {
-  width: 196px;
+  width: 198px;
   margin-top: 3px;
 }
 
@@ -1991,10 +1995,13 @@ fieldset:not(:first-child) > legend {
 }
 
 .pagination-list {
+  width: 700px;
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   margin-bottom: 60px;
 }
 
