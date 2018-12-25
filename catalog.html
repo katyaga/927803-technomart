@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="inner-page">
   <header class="main-header">
@@ -16,7 +16,7 @@
         <a class="header-logo" href="index.html">Техномарт</a>
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search">Найти на сайте</label>
-          <input id="search" type="text" name="search" placeholder="Поиск:">
+          <input class="search-input" id="search" type="text" name="search" placeholder="Поиск:">
           <button class="search-button" type="submit" >
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
               <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0
@@ -36,7 +36,7 @@
     <div class="header-bottom">
       <div class="container">
         <div class="header-bottom-1">
-          <span class="headline">Интернет-магазин строительных материалов и инструментов для ремонта</span>
+          <span class="headline">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</span>
           <section class="header-contacts">
             <a class="header-contacts-phone" href="#">+7 (812) 555-05-55</a>
             <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -133,22 +133,22 @@
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-brand">
-                  <input class="visually-hidden filter-input" type="checkbox" name="bosch" id="bosch" checked>
+                  <input class="visually-hidden brand-input" type="checkbox" name="bosch" id="bosch" checked>
                   <label for="bosch">Bosch</label>
                 </li>
                 <li class="filter-brand">
-                  <input class="visually-hidden" type="checkbox" name="interscol" id="interscol">
+                  <input class="visually-hidden brand-input" type="checkbox" name="interscol" id="interscol">
                   <label for="interscol">Интерскол</label>
                 </li>
                 <li class="filter-brand">
-                  <input class="visually-hidden" type="checkbox" name="makita" id="makita" checked>
+                  <input class="visually-hidden brand-input" type="checkbox" name="makita" id="makita" checked>
                   <label for="makita">Makita</label>
                 </li>
                 <li class="filter-brand">
-                  <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt">
+                  <input class="visually-hidden brand-input" type="checkbox" name="dewalt" id="dewalt">
                   <label for="dewalt">Dewalt</label>
                 <li class="filter-brand">
-                  <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi" disabled>
+                  <input class="visually-hidden brand-input" type="checkbox" name="hitachi" id="hitachi" disabled>
                   <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -157,11 +157,11 @@
               <legend>Питание:</legend>
               <ul>
                 <li class="filter-supply">
-                  <input class="visually-hidden" type="radio" name="supply" id="battery" value="battery" checked>
+                  <input class="visually-hidden supply-input" type="radio" name="supply" id="battery" value="battery" checked>
                   <label for="battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-supply">
-                  <input class="visually-hidden" type="radio" name="supply" id="ac" value="ac">
+                  <input class="visually-hidden supply-input" type="radio" name="supply" id="ac" value="ac">
                   <label for="ac">Сетевые</label>
                 </li>
               </ul>
@@ -203,7 +203,7 @@
               <p class="new-price">15500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -215,7 +215,7 @@
               <p class="new-price">25500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item new">
@@ -227,7 +227,7 @@
               <p class="new-price">12500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -239,7 +239,7 @@
               <p class="new-price">15500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item new">
@@ -251,7 +251,7 @@
               <p class="new-price">25500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -263,7 +263,7 @@
               <p class="new-price">12500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item new">
@@ -275,7 +275,7 @@
               <p class="new-price">15500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -287,7 +287,7 @@
               <p class="new-price">25500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -299,7 +299,7 @@
               <p class="new-price">12500 Р.</p>
               <div class="product-buttons">
                 <a class="product-button button product-button-buy" href="#">Купить</a>
-                <button class="product-button product-button-bookmark" type="button">В закладки</button>
+                <a class="product-button button product-button-bookmark" href="#">В закладки</a>
               </div>
             </li>
           </ul>

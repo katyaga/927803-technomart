@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="main-page">
   <header class="main-header">
@@ -16,7 +16,7 @@
         <a class="header-logo">Техномарт</a>
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search">Найти на сайте</label>
-          <input id="search" type="text" name="search" placeholder="Поиск:">
+          <input class="search-input" id="search" type="text" name="search" placeholder="Поиск:">
           <button class="search-button" type="submit" >
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
               <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0
@@ -189,7 +189,7 @@
             <p class="new-price">15500 Р.</p>
             <div class="product-buttons">
               <a class="product-button button product-button-buy" href="#">Купить</a>
-              <button class="product-button product-button-bookmark" type="button">В закладки</button>
+              <a class="product-button button product-button-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="product-item">
@@ -201,7 +201,7 @@
             <p class="new-price">25500 Р.</p>
             <div class="product-buttons">
               <a class="product-button button product-button-buy" href="#">Купить</a>
-              <button class="product-button product-button-bookmark" type="button">В закладки</button>
+              <a class="product-button button product-button-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="product-item new">
@@ -213,7 +213,7 @@
             <p class="new-price">12500 Р.</p>
             <div class="product-buttons">
               <a class="product-button button product-button-buy" href="#">Купить</a>
-              <button class="product-button product-button-bookmark" type="button">В закладки</button>
+              <a class="product-button button product-button-bookmark" href="">В закладки</a>
             </div>
           </li>
         </ul>

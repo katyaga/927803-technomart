@@ -113,11 +113,11 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.search input {
+.search-input {
   height: 42px;
 }
 
-.search input[type="text"] {
+.search-input[type="text"] {
   width: 221px;
   padding: 12px 0 12px 1px;
   font: inherit;
@@ -128,7 +128,7 @@ input[type="radio"].visually-hidden {
   outline:none;
 }
 
-.search input::placeholder {
+.search-input::placeholder {
   color: #ffffff;
   opacity: 1;
 }
@@ -155,8 +155,8 @@ input[type="radio"].visually-hidden {
 
 .search-button:hover,
 .search-button:focus,
-.search input:hover ~ .search-button,
-.search input:focus ~ .search-button {
+.search-input:hover ~ .search-button,
+.search-input:focus ~ .search-button {
   opacity: 1;
 }
 
@@ -164,32 +164,32 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
-.search input:focus::-webkit-input-placeholder {
+.search-input:focus::-webkit-input-placeholder {
   color: #000000;
 }
 
-.search input:focus::-moz-placeholder {
+.search-input:focus::-moz-placeholder {
   color: #000000;
 }
 
-.search input:focus::-ms-input-placeholder {
+.search-input:focus::-ms-input-placeholder {
   color: #000000;
 }
 
-.search input:focus::placeholder {
+.search-input:focus::placeholder {
   color: #000000;
 }
 
-.search input:focus {
+.search-input:focus {
   color: #000000;
   background-color: #ffffff;
 }
 
-.search input:focus ~ .search-button path {
+.search-input:focus ~ .search-button path {
   fill: #ee3643;
 }
 
-.search input:focus ~ .search-button {
+.search-input:focus ~ .search-button {
   background-color: #ffffff;
   opacity: 1;
 }
@@ -480,10 +480,13 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider h3 {
+  margin: 0;
+  padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
   color: #32425c;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -517,7 +520,6 @@ input[type="radio"].visually-hidden {
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
   padding-left: 22px;
-  /* Временно для сетки */
   min-height: 61px;
 }
 
@@ -972,7 +974,7 @@ body {
 }
 
 .inner-page .headline {
-  margin-right: 71px;
+  margin-right: 70px;
 }
 
 .header-contacts p {
@@ -1310,8 +1312,7 @@ body {
 }
 
 .slider-2 h3 {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .service {
@@ -1702,12 +1703,12 @@ body {
   margin-bottom: 22px;
 }
 
-.filter-brand input + label,
-.filter-supply input + label {
+.brand-input + label,
+.supply-input + label {
   position: relative;
 }
 
-.filter-brand input + label::before {
+.brand-input + label::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -1719,15 +1720,15 @@ body {
   z-index: 10;
 }
 
-.filter-brand input:checked + label::before {
+.brand-input:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-brand input + label::before {
+.brand-input + label::before {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-supply input + label::before {
+.supply-input + label::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -1739,23 +1740,23 @@ body {
   z-index: 10;
 }
 
-.filter-supply input:checked + label::before {
+.supply-input:checked + label::before {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-supply input + label::before {
+.supply-input + label::before {
   background-image: url("../img/radio-off.svg");
 }
 
-.filter-supply input:hover + label::before,
-.filter-brand input:hover + label::before,
-.filter-supply input:focus + label::before,
-.filter-brand input:focus + label::before {
+.supply-input:hover + label::before,
+.brand-input:hover + label::before,
+.supply-input:focus + label::before,
+.brand-input:focus + label::before {
   opacity: 1;
 }
 
-.filter-supply input[disabled] + label::before,
-.filter-brand input[disabled] + label::before {
+.supply-input[disabled] + label::before,
+.brand-input[disabled] + label::before {
   opacity: 0.3;
 }
 
@@ -2304,6 +2305,7 @@ fieldset:not(:first-child) > legend {
   width: 940px;
   height: 446px;
   position: fixed;
+  background: url("../img/big-map.png") no-repeat 0 0;
   box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.75);
   z-index: 100;
   display: none;
