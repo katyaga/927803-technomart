@@ -91,6 +91,7 @@ if(map_popup) {
   });
 }
 
+// Главный слайдер
 var slide_back = document.querySelector(".button-slider-back");
 var slide_next = document.querySelector(".button-slider-next");
 var slider = document.querySelector(".slider");
@@ -130,6 +131,7 @@ for (var k = 0; k < slides.length; k++) {
   add_click_dot_handler(dots[k], slides[k]);
 }
 
+// Слайдер-2
 var slider_2 = document.querySelector(".slider-2");
 if(slider_2) {
   var active_slide_2 = document.querySelector(".slide-2-active");

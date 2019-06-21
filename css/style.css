@@ -577,7 +577,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1924,14 +1924,17 @@ fieldset:not(:first-child) > legend {
   min-height: 38px;
 }
 
-.sort-list a {
-  text-decoration: underline dotted #ee3643;
-}
+
 
 .sort-list a:hover,
 .sort-list a:focus {
   color: rgba(0, 0, 0, 1);
-  text-decoration: underline solid #ee3643;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort-list a {
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sort-list a:active,
@@ -1940,7 +1943,7 @@ fieldset:not(:first-child) > legend {
 .sort-list .sort-item-current:focus,
 .sort-list .sort-item-current:active {
   color: #ee3643;
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .sort-direction {
